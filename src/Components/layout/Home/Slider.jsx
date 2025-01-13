@@ -5,10 +5,10 @@ function Slider() {
   let [animationKey, setAnimationKey] = useState(0);
 
   const slides = [
-    "./src/assets/slider/slide1.jpg",
-    "./src/assets/slider/slide2.jpg",
-    "./src/assets/slider/slide3.jpg",
-    "./src/assets/slider/slide4.jpg",
+    "./public/slider/slide1.jpg",
+    "./public/slider/slide2.jpg",
+    "./public/slider/slide3.jpg",
+    "./public/slider/slide4.jpg",
   ];
 
   useEffect(() => {
