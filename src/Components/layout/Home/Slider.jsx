@@ -4,18 +4,11 @@ function Slider() {
   let [count, setCount] = useState(0);
   let [animationKey, setAnimationKey] = useState(0);
 
-  // const slides = [
-  //  " https://cellmart.pk/wp-content/uploads/2024/10/apple-iphone-16-banner-cellmart.png",
-  //   "./Colider/slide2.jpg",
-  //   "./public/slider/slide3.jpg",
-  //   "./public/slider/slide4.jpg",
-  // ];
-
   const slides = [
-    "src/Components/layout/Slider/slide1.jpg", 
-    "src/Components/layout/Slider/slide2.jpg", 
-    "src/Components/layout/Slider/slide3.jpg", 
-    "src/Components/layout/Slider/slide4.jpg", 
+    "https://cellmart.pk/wp-content/uploads/2024/10/apple-iphone-16-banner-cellmart.png", 
+    "https://cellmart.pk/wp-content/uploads/2024/09/Apple-Watch-series-10-Banner-cellmart.png", 
+    "https://cellmart.pk/wp-content/uploads/2025/01/POCO-X7-Pro-Banner-cellmart.jpg", 
+    "https://cellmart.pk/wp-content/uploads/2024/09/Apple-AirPods-4-Banner-cellmart.png", 
   ];
 
   useEffect(() => {
