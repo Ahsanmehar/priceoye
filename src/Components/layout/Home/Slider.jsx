@@ -12,10 +12,10 @@ function Slider() {
   // ];
 
   const slides = [
-    "./Components/layout/Slider/slide1.jpg", 
-    "./Components/layout/Slider/slide2.jpg", 
-    "./Components/layout/Slider/slide3.jpg", 
-    "./Components/layout/Slider/slide4.jpg", 
+    "src/Components/layout/Slider/slide1.jpg", 
+    "src/Components/layout/Slider/slide2.jpg", 
+    "src/Components/layout/Slider/slide3.jpg", 
+    "src/Components/layout/Slider/slide4.jpg", 
   ];
 
   useEffect(() => {
