@@ -4,11 +4,18 @@ function Slider() {
   let [count, setCount] = useState(0);
   let [animationKey, setAnimationKey] = useState(0);
 
+  // const slides = [
+  //  " https://cellmart.pk/wp-content/uploads/2024/10/apple-iphone-16-banner-cellmart.png",
+  //   "./Colider/slide2.jpg",
+  //   "./public/slider/slide3.jpg",
+  //   "./public/slider/slide4.jpg",
+  // ];
+
   const slides = [
-   " https://cellmart.pk/wp-content/uploads/2024/10/apple-iphone-16-banner-cellmart.png",
-    "./public/slider/slide2.jpg",
-    "./public/slider/slide3.jpg",
-    "./public/slider/slide4.jpg",
+    "./Components/layout/Slider/slide1.jpg", 
+    "./Components/layout/Slider/slide2.jpg", 
+    "./Components/layout/Slider/slide3.jpg", 
+    "./Components/layout/Slider/slide4.jpg", 
   ];
 
   useEffect(() => {
