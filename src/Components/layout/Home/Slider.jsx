@@ -5,7 +5,7 @@ function Slider() {
   let [animationKey, setAnimationKey] = useState(0);
 
   const slides = [
-    "./public/slider/slide1.jpg",
+   " https://cellmart.pk/wp-content/uploads/2024/10/apple-iphone-16-banner-cellmart.png",
     "./public/slider/slide2.jpg",
     "./public/slider/slide3.jpg",
     "./public/slider/slide4.jpg",
