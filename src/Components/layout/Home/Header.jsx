@@ -15,7 +15,8 @@ function Header() {
         <i className="ri-search-line absolute right-2 top-1/2 -translate-y-1/2 text-myblue text-xl pointer"></i>
       </form>
       <div className="flex gap-x-3">
-        <i className="ri-account-circle-line icons"></i>
+      <i className="ri-sun-line icons"></i>
+        <i className="ri-user-line icons"></i>
         <i className="ri-shopping-cart-line icons"></i>
         <i className="ri-heart-3-line icons"></i>
       </div>
