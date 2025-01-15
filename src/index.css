@@ -8,25 +8,39 @@
 .flexbox {
   @apply flex items-center justify-between;
 }
+.flexcenter {
+  @apply flex items-center justify-center;
+}
 .pointer {
   @apply cursor-pointer;
 }
 .icons {
-  @apply cursor-pointer text-white text-xl font-thin
-}
-.icons {
-  @apply cursor-pointer text-white text-xl font-thin
-}
-.flexcenter {
-  @apply flex items-center justify-center
+  @apply cursor-pointer text-white text-xl font-thin;
 }
 .navbar {
-  @apply text-myblack1 
+  @apply text-myblack1;
 }
 .isActive {
-  @apply relative after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-[2px] after:bg-myblue
+  @apply relative after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-[2px] after:bg-myblue;
 }
 .navbarhover {
-  @apply relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-myblue after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300
+  @apply relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-myblue after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300;
 }
-
+.fivestar {
+  @apply text-myorange text-[14.5px] mr-[2px];
+}
+.heart {
+  @apply text-[20px] py-[10px] px-[10px] text-myblack1 bg-white rounded-[50%] font-thin shadow-xl;
+}
+.hearthover {
+  @apply transition-all duration-300 group-hover:bg-gray-700 group-hover:text-white font-thin;
+}
+.hearttooltip {
+  @apply absolute right-full top-1/2 -translate-y-1/2 mr-2 w-max bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity;
+}
+.arrowright {
+  @apply absolute right-[-1.6%] top-[50%] translate-y-[-50%] z-10	text-[30px]  px-[6px] text-myblack1 bg-white rounded-[50%] font-thin shadow-xl hover:border-[1px] border-myblack;
+}
+.arrowleft {
+  @apply absolute left-[-1.6%] top-[50%] translate-y-[-50%] z-10 text-[30px]  px-[6px] text-myblack1 bg-white rounded-[50%] font-thin shadow-xl hover:border-[1px] border-black;
+}
