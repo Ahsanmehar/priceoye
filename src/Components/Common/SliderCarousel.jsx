@@ -103,7 +103,7 @@ function SliderCarousel() {
   ];
   return (
     <div
-      className="bg-mygra1 mt-[60px] w-[100%] h-[fit]"
+      className="bg-mygra1 w-[100%] h-[fit]"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

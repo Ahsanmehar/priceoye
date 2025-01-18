@@ -6,14 +6,17 @@ import PaymentShipping from "../../../Pages/PaymentShipping";
 import ContactUs from "../../../Pages/ContactUs";
 import Header from "../Home/Header";
 import Navbar from "../Home/Navbar";
+import Footer from "../Home/Footer";
+import SignIn from "../Form/SignIn";
+import SignUp from "../Form/SignUp";
+import ForgetPassword from "../Form/ForgotPassword";
 
 let router = createBrowserRouter([
   {
     path: "/",
     element: (
       <div>
-        {" "}
-        <Header /> <Navbar /> <Home />{" "}
+        <Header /> <Navbar /> <Home /> <Footer />
       </div>
     ),
   },
@@ -21,10 +24,10 @@ let router = createBrowserRouter([
     path: "/aboutus",
     element: (
       <div>
-        {" "}
         <Header />
         <Navbar />
         <AboutUs />
+        <Footer />
       </div>
     ),
   },
@@ -35,6 +38,7 @@ let router = createBrowserRouter([
         <Header />
         <Navbar />
         <StoreLocator />
+        <Footer />
       </div>
     ),
   },
@@ -45,6 +49,7 @@ let router = createBrowserRouter([
         <Header />
         <Navbar />
         <PaymentShipping />
+        <Footer />
       </div>
     ),
   },
@@ -55,6 +60,31 @@ let router = createBrowserRouter([
         <Header />
         <Navbar />
         <ContactUs />
+        <Footer />
+      </div>
+    ),
+  },
+  {
+    path: "/signin",
+    element: (
+      <div>
+        <SignIn />
+      </div>
+    ),
+  },
+  {
+    path: "/signup",
+    element: (
+      <div>
+        <SignUp />
+      </div>
+    ),
+  },
+  {
+    path: "/forgetpassword",
+    element: (
+      <div>
+        <ForgetPassword />
       </div>
     ),
   },

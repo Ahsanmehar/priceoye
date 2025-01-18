@@ -33,14 +33,37 @@
   @apply text-[20px] py-[10px] px-[10px] text-myblack1 bg-white rounded-[50%] font-thin shadow-xl;
 }
 .hearthover {
-  @apply transition-all duration-300 group-hover:bg-gray-700 group-hover:text-white font-thin;
+  @apply transition-all duration-300 group-hover:bg-myblue group-hover:text-white font-thin;
 }
 .hearttooltip {
-  @apply absolute right-full top-1/2 -translate-y-1/2 mr-2 w-max bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity;
+  @apply absolute right-full top-1/2 -translate-y-1/2 mr-2 w-max bg-myblue text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity;
 }
 .arrowright {
-  @apply absolute right-[-1.6%] top-[50%] translate-y-[-50%] z-10	text-[30px]  px-[6px] text-myblack1 bg-white rounded-[50%] font-thin shadow-xl hover:border-[1px] border-myblack;
+  @apply absolute right-[-1.6%] top-[50%] translate-y-[-50%] z-10	text-[30px]  px-[6px] text-myblue bg-white rounded-[50%] font-thin shadow-xl hover:border-[1px] border-myblue;
 }
 .arrowleft {
-  @apply absolute left-[-1.6%] top-[50%] translate-y-[-50%] z-10 text-[30px]  px-[6px] text-myblack1 bg-white rounded-[50%] font-thin shadow-xl hover:border-[1px] border-black;
+  @apply absolute left-[-1.6%] top-[50%] translate-y-[-50%] z-10 text-[30px]  px-[6px] text-myblue bg-white rounded-[50%] font-thin shadow-xl hover:border-[1px] border-myblue;
 }
+.button {
+  @apply bg-myblue text-[14px] px-[30px] py-[15px] rounded-[10px] w-fit font-medium text-white hover:bg-white hover:text-myblue;
+}
+.emailbutton {
+  @apply py-[14px] px-[24px] w-[100%] text-[myblack] bg-[transparent] border-[1px] border-[white] font-medium rounded-[10px] flexcenter gap-[10px] focus:outline-none;
+}
+
+.isActive2 {
+  @apply relative after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-[2px] after:bg-white pointer w-fit;
+}
+.navbarhover2 {
+  @apply relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-white after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300 w-fit;
+}
+.orcontinuewith {
+  @apply relative text-[16px] font-medium flexcenter after:content-[''] after:h-[1px] after:w-[30%] after:absolute after:bg-myblack after:right-[0] before:content-[''] before:h-[1px] before:w-[30%] before:absolute before:bg-myblack before:left-[0];
+}
+.createaccount {
+  @apply relative flexcenter after:content-[''] after:h-[1.6px] after:w-full after:absolute after:bg-myblack after:bottom-[0] after:scale-x-100 hover:after:scale-x-0 after:origin-left after:transition-transform after:duration-300
+}
+.forgetpassword {
+  @apply relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1px] after:bg-myblack after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300 w-fit;
+}
+

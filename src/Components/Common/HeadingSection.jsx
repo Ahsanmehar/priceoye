@@ -1,7 +1,7 @@
 function HeadingSection({ title }) {
   return (
-    <div className="w-full h-px bg-mygray flexcenter">
-      <h1 className="bg-mygray w-fit text-3xl	px-4 py-1.5">{title}</h1>
+    <div className="w-full h-[1px] bg-myblue bg-blue flexcenter">
+      <h1 className="bg-myblue w-fit text-3xl	px-4 py-1.5 text-white">{title}</h1>
     </div>
   );
 }
