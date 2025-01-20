@@ -12,7 +12,7 @@ function SignIn() {
             src="https://static.priceoye.pk/images/logo.svg"
             alt="Error-Image"
             className="object-cover pointer"
-            onClick={() => navigate('/')}
+            onClick={() => navigate("/")}
           />
         </div>
 
@@ -48,7 +48,10 @@ function SignIn() {
                 Remember for 30 days
               </span>
             </label>
-            <h5 className="text-[14px] text-myblack1 pointer forgetpassword">
+            <h5
+              className="text-[14px] text-myblack1 pointer forgetpassword"
+              onClick={() => navigate("/forgotpassword")}
+            >
               Forgot password?
             </h5>
           </div>
@@ -77,7 +80,7 @@ function SignIn() {
       <div className="w-[65%] h-[100%] bg-myblue relative">
         <FormRightSection
           heading="New Here?"
-          subHeading="Sign up today and open the door to new opportunities. Discover exciting features tailored just for you."
+          subHeading="Sign up now and open the door to new opportunities.Discover exciting features tailored just for you.Connect, explore, and achieve more than ever.Your journey starts with a single click—join us today!"
           buttonText="Sign Up"
           buttonAction={() => navigate("/signup")}
         />

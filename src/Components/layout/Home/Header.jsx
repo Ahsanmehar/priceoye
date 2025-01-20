@@ -1,7 +1,24 @@
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import CartPopUp from "./CartPopUp";
+import WishlistPopUp from "./WishlistPopUp";
 
 function Header() {
+  const [showAddToCart, setShowAddToCart] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (showAddToCart) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [showAddToCart]);
+
   return (
     <div className="bg-myblue w-full flexbox relative py-3 px-28">
       <img
@@ -23,9 +40,31 @@ function Header() {
           className="ri-user-line icons"
           onClick={() => navigate("/signin")}
         ></i>
-        <i className="ri-shopping-cart-line icons"></i>
-        <i className="ri-heart-3-line icons"></i>
+        <i
+          className="ri-shopping-cart-line icons"
+          onClick={() => setShowAddToCart(true)}
+        ></i>
+        <i
+          className="ri-heart-3-line icons"
+          onClick={() => setShowAddToCart(true)}
+        ></i>
       </div>
+      {showAddToCart ? (
+        <CartPopUp
+          CloseCart={() => setShowAddToCart(false)}
+          showAddToCart={showAddToCart}
+        />
+      ) : (
+        ""
+      )}
+      {showAddToCart ? (
+        <WishlistPopUp
+          CloseCart={() => setShowAddToCart(false)}
+          showAddToCart={showAddToCart}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 }

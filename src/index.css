@@ -45,7 +45,7 @@
   @apply absolute left-[-1.6%] top-[50%] translate-y-[-50%] z-10 text-[30px]  px-[6px] text-myblue bg-white rounded-[50%] font-thin shadow-xl hover:border-[1px] border-myblue;
 }
 .button {
-  @apply bg-myblue text-[14px] px-[30px] py-[15px] rounded-[10px] w-fit font-medium text-white hover:bg-white hover:text-myblue;
+  @apply bg-myblue text-[14px] px-[30px] py-[15px] rounded-[10px] w-fit font-medium text-white hover:bg-white hover:text-myblue hover:border-myblue hover:border-[1px]
 }
 .emailbutton {
   @apply py-[14px] px-[24px] w-[100%] text-[myblack] bg-[transparent] border-[1px] border-[white] font-medium rounded-[10px] flexcenter gap-[10px] focus:outline-none;

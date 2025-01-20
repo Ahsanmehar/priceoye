@@ -81,7 +81,7 @@ let router = createBrowserRouter([
     ),
   },
   {
-    path: "/forgetpassword",
+    path: "/forgotpassword",
     element: (
       <div>
         <ForgetPassword />

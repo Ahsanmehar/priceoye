@@ -3,6 +3,7 @@ import SmartPhones from "../Components/layout/Home/SmartPhones";
 import Discount from "../Components/layout/Home/Discount";
 import TabletIpads from "../Components/layout/Home/TabletIpads";
 import MobileAccessorie from "../Components/layout/Home/MobileAccessories";
+import Info from "../Components/Common/Info";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Discount />
       <TabletIpads />
       <MobileAccessorie />
+      <Info />
     </>
   );
 }

@@ -13,20 +13,20 @@ function Footer() {
 
           <div className="flex flex-col gap-[6px]">
             <h5 className="text-[17px] flex justify-center gap-[10px]">
-              <i class="ri-map-pin-line text-[30px]"></i>Purana Kahana,
+              <i className="ri-map-pin-line text-[30px]"></i>Purana Kahana,
               Ferozepur Road, Lahore, Pakistan
             </h5>
             <h5 className="text-[17px] flex items-center gap-[10px]">
-              <i class="ri-phone-fill text-[30px]"></i>+92 309 7230656
+              <i className="ri-phone-fill text-[30px]"></i>+92 309 7230656
             </h5>
             <h5 className="text-[17px] flex items-center gap-[10px]">
-              <i class="ri-mail-line text-[30px]"></i>Ahsanmeharj@gmail.com
+              <i className="ri-mail-line text-[30px]"></i>Ahsanmeharj@gmail.com
             </h5>
             <div className="flexcenter gap-[17px]">
-              <i class="ri-facebook-box-line text-[35px] pointer"></i>
-              <i class="ri-instagram-line text-[35px] pointer"></i>
-              <i class="ri-telegram-2-line text-[35px] pointer"></i>
-              <i class="ri-whatsapp-line text-[35px] pointer"></i>
+              <i className="ri-facebook-box-line text-[35px] pointer"></i>
+              <i className="ri-instagram-line text-[35px] pointer"></i>
+              <i className="ri-telegram-2-line text-[35px] pointer"></i>
+              <i className="ri-whatsapp-line text-[35px] pointer"></i>
             </div>
           </div>
         </div>
