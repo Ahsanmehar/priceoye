@@ -36,8 +36,8 @@ function Slider() {
             <div
               key={i}
               onClick={() => setCount(i)}
-              className={`w-2 h-2 rounded-full cursor-pointer ${
-                i == count ? "bg-white" : "bg-gray-400"
+              className={`w-[8px] h-[8px] rounded-full cursor-pointer ${
+                i == count ? "bg-myblue" : "bg-gray-400"
               }`}
             ></div>
           );
