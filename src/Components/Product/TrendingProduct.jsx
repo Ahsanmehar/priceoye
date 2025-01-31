@@ -8,13 +8,13 @@ function TrendingProduct() {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <div className="bg-mygra w-[40%] h-[170px] relative pointer">
+      <div className="w-[40%] h-[170px] relative pointer">
         <img
           src="https://cellmart.pk/wp-content/uploads/2024/10/sam-s24-fe-mint-cellmart-300x300.jpg"
           alt="Error-Image"
           className="w-[100%] h-[100%] object-cover"
         />
-        <div className="absolute top-[5px] right-[27px] flex flex-col gap-[15px]">
+        <div className="absolute top-[5px] right-[-9px] flex flex-col gap-[15px]">
           {/* Heart Icon */}
           <div className="relative group inline-block">
             <i className="ri-heart-line heart hearthover"></i>

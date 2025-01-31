@@ -1,7 +1,7 @@
 function KeepInTouch() {
   return (
     <div className="w-[100%] h-[58vh] px-28 flexbox">
-      <div className="w-[46%] h-[100%]">
+      <div className="w-[45%] h-[100%]">
         <img
           src="https://images.unsplash.com/photo-1546795729-f3a5d42087f5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Error-Image"
@@ -21,7 +21,7 @@ function KeepInTouch() {
 
         <div className="flex flex-col gap-[20px] mt-[35px]">
           <div className="flex gap-[15px]">
-            <div className="w-[45px] h-[45px] bg-[#FD847C] rounded-[50%] flexcenter">
+            <div className="w-[45px] h-[45px] bg-myblue rounded-[50%] flexcenter">
               <i className="bi bi-house-door text-[20px] text-white"></i>
             </div>
             <div>
@@ -41,7 +41,7 @@ function KeepInTouch() {
             </div>
           </div>
           <div className="flex gap-[15px]">
-            <div className="w-[45px] h-[45px] bg-[#FF9B4A] rounded-[50%] flexcenter">
+            <div className="w-[45px] h-[45px] bg-myblue rounded-[50%] flexcenter">
               <i className="bi bi-geo-alt text-[20px] text-white"></i>
             </div>
             <div>

@@ -3,7 +3,7 @@ import ProductCard from "../../Product/ProductCard";
 
 function MobileAccessorie() {
   return (
-    <div className="w-full h-[45vh] px-28 my-16  flex flex-col justify-between">
+    <div className="w-full h-[48vh] px-28 my-[100px] flex flex-col justify-between">
       <HeadingSection title="Mobile Accessories"/>
       <div className="flex">
       <ProductCard />

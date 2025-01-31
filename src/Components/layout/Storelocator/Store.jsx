@@ -1,23 +1,22 @@
 import HappyCustomer from "../../Common/HappyCustomer";
 
-function About() {
+function Store() {
   return (
-    <div className="w-[100%] h-[58vh] px-28 flexbox mt-[90px] mb-[90px]">
+    <div className="w-[100%] h-[58vh] flexbox px-28 mt-[90px] mb-[90px]">
       <div className="w-[50%] h-[100%] flex flex-col gap-[25px]">
-        <h5 className="text-[15px] font-medium text-myblue">ABOUT US</h5>
-        <h1 className="text-[56px] font-semibold">Easy Adventures on Mobile</h1>
+        <h5 className="text-[15px] font-medium text-myblue">STORE LOCATOR</h5>
+        <h1 className="text-[56px] font-semibold">Fast Store Locator Nearby</h1>
         <p className="text-[16px] text-myblack leading-[26px]">
-          At PriceOye, we make exploring the world easier, right from your
-          mobile device. With a focus on simplicity and convenience, we provide
-          a seamless experience for discovering new places and planning your
-          next adventure.
+          Our store locator makes it easy to find nearby stores right from your
+          mobile device. With a simple and user-friendly interface, you can
+          search for locations, get directions, and explore store details
+          effortlessly.
         </p>
         <div className="flexbox mt-[30px] px-[40px]">
           <HappyCustomer
             unit="k+"
             num={12}
             title="Happy Customers"
-            // color="#FD847C"
             color="#48AFFF"
           />
           <HappyCustomer
@@ -30,14 +29,13 @@ function About() {
             unit="%"
             num={16}
             title="Conversion Rate Increased"
-            // color="#FF9B4A"
             color="#48AFFF"
           />
         </div>
       </div>
       <div className="w-[46%] h-[100%]">
         <img
-          src="https://images.unsplash.com/photo-1544725121-be3bf52e2dc8?q=80&w=1734&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Error-Image"
           className="w-[100%] h-[100%] object-cover rounded-[30px]"
         />
@@ -46,4 +44,4 @@ function About() {
   );
 }
 
-export default About;
+export default Store;
