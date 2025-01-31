@@ -10,6 +10,7 @@ import Footer from "../Home/Footer";
 import SignIn from "../Form/SignIn";
 import SignUp from "../Form/SignUp";
 import ForgetPassword from "../Form/ForgotPassword";
+import DeliveryData from "../Home/DeliveryData";
 import BackToTop from "../../Common/BackToTop";
 import WhattsappButton from "../../Common/WhattsappButton";
 
@@ -18,7 +19,12 @@ let router = createBrowserRouter([
     path: "/",
     element: (
       <div>
-        <Header /> <Navbar /> <Home /> <Footer /> <BackToTop />
+        <Header />
+        <Navbar />
+        <Home />
+        <DeliveryData />
+        <Footer />
+        <BackToTop />
         <WhattsappButton />
       </div>
     ),
@@ -30,8 +36,10 @@ let router = createBrowserRouter([
         <Header />
         <Navbar />
         <AboutUs />
+        <DeliveryData />
         <Footer />
         <BackToTop />
+        <WhattsappButton />
       </div>
     ),
   },
@@ -42,8 +50,10 @@ let router = createBrowserRouter([
         <Header />
         <Navbar />
         <StoreLocator />
+        <DeliveryData />
         <Footer />
         <BackToTop />
+        <WhattsappButton />
       </div>
     ),
   },
@@ -54,8 +64,10 @@ let router = createBrowserRouter([
         <Header />
         <Navbar />
         <PaymentShipping />
+        <DeliveryData />
         <Footer />
         <BackToTop />
+        <WhattsappButton />
       </div>
     ),
   },
@@ -66,8 +78,10 @@ let router = createBrowserRouter([
         <Header />
         <Navbar />
         <ContactUs />
+        <DeliveryData />
         <Footer />
         <BackToTop />
+        <WhattsappButton />
       </div>
     ),
   },
