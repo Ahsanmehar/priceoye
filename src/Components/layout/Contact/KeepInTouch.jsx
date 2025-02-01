@@ -19,7 +19,7 @@ function KeepInTouch() {
           the information you need quickly and easily.
         </p>
 
-        <div className="flex flex-col gap-[20px] mt-[35px]">
+        <div className="flex flex-col gap-[25px] mt-[35px]">
           <div className="flex gap-[15px]">
             <div className="w-[45px] h-[45px] bg-myblue rounded-[50%] flexcenter">
               <i className="bi bi-house-door text-[20px] text-white"></i>

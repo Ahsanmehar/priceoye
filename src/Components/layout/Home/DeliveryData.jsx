@@ -28,9 +28,9 @@ const deliveryOptions = [
 function DeliveryData() {
   return (
     <div className="w-[100%] h-[17vh] bg-myblac px-28 border-myblue border-b-[1px] border-t-[1px] mb-[70px] flexbox">
-      {deliveryOptions.map((data) => {
+      {deliveryOptions.map((data,i) => {
         return (
-          <div className="w-[20%] border-r-[1px] border-myblue flex items-center gap-[18px]">
+          <div className="w-[20%] border-r-[1px] border-myblue flex items-center gap-[18px]" key={i}>
             <i className={`text-[40px] text-myblue ${data.icon}`}></i>
             <div>
               <h3 className="text-[18px]">{data.title}</h3>

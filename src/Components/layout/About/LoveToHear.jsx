@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 function LoveToHear() {
+  const navigate = useNavigate();
   return (
     <div className="w-[100%] h-[30vh] px-28 flexbox flex-col items-center mt-[80px] mb-[80px]">
       <h1 className="text-[46px] font-semibold">We’d love to hear from you!</h1>
@@ -10,7 +13,10 @@ function LoveToHear() {
         possible. Thank you for choosing PakExplore to discover Pakistan’s
         beauty and history!
       </p>
-      <button className="w-fit bg-myblue py-[15px] px-[50px] rounded-[10px] text-white">
+      <button
+        className="w-fit bg-myblue py-[15px] px-[50px] rounded-[10px] text-white"
+        onClick={() => navigate("/contactus")}
+      >
         CONTACT US
       </button>
     </div>
