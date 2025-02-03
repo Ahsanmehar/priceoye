@@ -4,23 +4,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProductData from "./ProductData";
 
-const CustomNextArrow = ({ onClick, hover }) => {
+const CustomNextArrow = ({ onClick, ishover }) => {
   return (
     <button onClick={onClick}>
       <i
         className={`ri-arrow-right-s-line arrowright  ${
-          hover ? "opacity-100" : "opacity-0"
+          ishover ? "opacity-100" : "opacity-0"
         } transition-opacity duration-500`}
       ></i>
     </button>
   );
 };
-const CustomPrevArrow = ({ onClick, hover }) => {
+const CustomPrevArrow = ({ onClick, ishover }) => {
   return (
     <button onClick={onClick}>
       <i
         className={`ri-arrow-left-s-line arrowleft ${
-          hover ? "opacity-100" : "opacity-0"
+          ishover ? "opacity-100" : "opacity-0"
         } transition-opacity duration-500`}
       ></i>
     </button>
@@ -28,7 +28,8 @@ const CustomPrevArrow = ({ onClick, hover }) => {
 };
 
 function TabletIpadCard() {
-  let [hover, setHover] = useState(false);
+  let [hover, setHover] = useState(null);
+  let [ishover, setIsHover] = useState(false);
 
   const settings = {
     infinite: true,
@@ -38,8 +39,8 @@ function TabletIpadCard() {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    nextArrow: <CustomNextArrow hover={hover} />,
-    prevArrow: <CustomPrevArrow hover={hover} />,
+    nextArrow: <CustomNextArrow ishover={ishover} />,
+    prevArrow: <CustomPrevArrow ishover={ishover} />,
 
     responsive: [
       {
@@ -53,17 +54,17 @@ function TabletIpadCard() {
   return (
     <div
       className="bg-mygra1 w-full h-fit px-5"
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
     >
       <Slider {...settings}>
-        {ProductData.tablets.map((data) => {
+        {ProductData.tablets.map((data, index) => {
           return (
             <div
+              key={index}
               className="w-[210px] h-fit flex flex-col gap-[19px] px-4"
-              key={data.id}
-              onMouseEnter={() => setHover(true)}
-              onMouseLeave={() => setHover(false)}
+              onMouseEnter={() => setHover(index)}
+              onMouseLeave={() => setHover(null)}
             >
               <div className="bg-mygra w-[100%] h-[214px] relative pointer">
                 <img
@@ -82,7 +83,7 @@ function TabletIpadCard() {
                   <div className="relative group inline-block">
                     <i
                       className={`ri-eye-line heart transition-transform duration-300 hearthover ${
-                        hover
+                        hover == index
                           ? "translate-x-0 opacity-100 delay-100"
                           : "translate-x-4 opacity-0"
                       }`}
@@ -93,7 +94,7 @@ function TabletIpadCard() {
                   <div className="relative group inline-block">
                     <i
                       className={`ri-add-line heart transition-transform duration-300 hearthover ${
-                        hover
+                        hover == index
                           ? "translate-x-0 opacity-100 delay-200"
                           : "translate-x-4 opacity-0"
                       }`}

@@ -2,17 +2,17 @@ import { useState } from "react";
 import ProductData from "./ProductData";
 
 function MobibleAccessoriesCard() {
-  let [hover, setHover] = useState(false);
+  let [hover, setHover] = useState(null);
 
   return (
     <div className="bg-mygra1 w-full h-fit px-5 flexbox">
-      {ProductData.accessories.map((data) => {
+      {ProductData.accessories.map((data, index) => {
         return (
           <div
             className="w-[234px] h-fit flex flex-col gap-[19px] px-4"
             key={data.id}
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
+            onMouseEnter={() => setHover(index)}
+            onMouseLeave={() => setHover(null)}
           >
             <div className="bg-mygra w-[100%] h-[214px] relative pointer">
               <img
@@ -31,7 +31,7 @@ function MobibleAccessoriesCard() {
                 <div className="relative group inline-block">
                   <i
                     className={`ri-eye-line heart transition-transform duration-300 hearthover ${
-                      hover
+                      hover == index
                         ? "translate-x-0 opacity-100 delay-100"
                         : "translate-x-4 opacity-0"
                     }`}
@@ -42,7 +42,7 @@ function MobibleAccessoriesCard() {
                 <div className="relative group inline-block">
                   <i
                     className={`ri-add-line heart transition-transform duration-300 hearthover ${
-                      hover
+                      hover == index
                         ? "translate-x-0 opacity-100 delay-200"
                         : "translate-x-4 opacity-0"
                     }`}
