@@ -71,7 +71,7 @@ function SmartPhoneCard() {
                   alt="Error-Image"
                   className="w-[214px] h-[100%] object-cover"
                 />
-                <div className="absolute top-[5px] right-[27px] flex flex-col gap-[15px]">
+                <div className="absolute top-[5px] right-[2px] flex flex-col gap-[15px]">
                   {/* Heart Icon */}
                   <div className="relative group inline-block">
                     <i className="ri-heart-line heart hearthover"></i>
