@@ -1,5 +1,26 @@
 import { NavLink } from "react-router-dom";
 
+function handleClick() {
+  const email = encodeURIComponent("Ahsanmeharj@gmail.com");
+  const subject = encodeURIComponent("hello");
+  const body = "Hy! How r u?";
+
+  window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+}
+
+function handlePhone() {
+  window.location.href = "tel:+923097230656";
+}
+
+function handleWhatapps() {
+  let number = "+923097230656";
+  let message = "Hello, I need assistance!";
+  window.open(
+    `https://wa.me/${number}?text=${encodeURIComponent(message)}`,
+    "_blank"
+  );
+}
+
 function Footer() {
   return (
     <div className="bg-myblue w-[100%] h-[51vh] px-28 py-[43px] flex flex-col justify-between text-white">
@@ -12,21 +33,35 @@ function Footer() {
           />
 
           <div className="flex flex-col gap-[6px]">
-            <h5 className="text-[17px] flex justify-center gap-[10px]">
+            <a
+              href="https://www.google.com/maps/place/5+Number+Stop/@31.361244,74.3663111,17z/data=!3m1!4b1!4m6!3m5!1s0x3919a848c0e92689:0x9ab08f8418d4e4af!8m2!3d31.3612394!4d74.368886!16s%2Fg%2F11k9d7w2wy?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+              className="text-[17px] flex justify-center gap-[10px] w-fit pointer"
+              target="_blank"
+            >
               <i className="ri-map-pin-line text-[30px]"></i>Purana Kahana,
               Ferozepur Road, Lahore, Pakistan
-            </h5>
-            <h5 className="text-[17px] flex items-center gap-[10px]">
+            </a>
+            <h5
+              className="text-[17px] flex items-center gap-[10px] pointer"
+              onClick={handlePhone}
+            >
               <i className="ri-phone-fill text-[30px]"></i>+92 309 7230656
             </h5>
-            <h5 className="text-[17px] flex items-center gap-[10px]">
-              <i className="ri-mail-line text-[30px]"></i>Ahsanmeharj@gmail.com
+            <h5
+              className="text-[17px] flex items-center gap-[10px] pointer"
+              onClick={handleClick}
+            >
+              <i className="ri-mail-line text-[30px]"></i>
+              Ahsanmeharj@gmail.com
             </h5>
             <div className="flexcenter gap-[17px]">
               <i className="ri-facebook-box-line text-[35px] pointer"></i>
               <i className="ri-instagram-line text-[35px] pointer"></i>
               <i className="ri-telegram-2-line text-[35px] pointer"></i>
-              <i className="ri-whatsapp-line text-[35px] pointer"></i>
+              <i
+                className="ri-whatsapp-line text-[35px] pointer"
+                onClick={handleWhatapps}
+              ></i>
             </div>
           </div>
         </div>

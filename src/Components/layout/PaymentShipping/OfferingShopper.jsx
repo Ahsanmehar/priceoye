@@ -23,7 +23,7 @@ function OfferingShopper() {
         <div className="flex flex-col gap-[70px] mt-[30px]">
           <div className="flex gap-[100px]">
             <div className="flexcenter flex-col gap-[13px]">
-              <div className="border-[2px] border-myblue w-fit w-[91px] h-[91px] flexcenter rounded-[50%]">
+              <div className="border-[2px] border-myblue w-fit w-[90px] h-[90px] flexcenter rounded-[50%]">
                 <img
                   src="https://static.priceoye.pk//images/about-payment-debit.png"
                   alt="Error-Image"
@@ -33,7 +33,7 @@ function OfferingShopper() {
               <h3 className="text-[16px] text-myblack">Credit/Debit Card</h3>
             </div>
             <div className="flexcenter flex-col gap-[13px]">
-              <div className="border-[2px] border-myblue w-fit w-[91px] h-[91px] flexcenter rounded-[50%]">
+              <div className="border-[2px] border-myblue w-fit w-[90px] h-[90px] flexcenter rounded-[50%]">
                 <img
                   src="https://static.priceoye.pk//images/about-payment-bank.png"
                   alt="Error-Image"
@@ -45,7 +45,7 @@ function OfferingShopper() {
           </div>
           <div className="flex gap-[100px]">
             <div className="flexcenter flex-col gap-[13px]">
-              <div className="border-[2px] border-myblue w-fit w-[91px] h-[91px] flexcenter rounded-[50%]">
+              <div className="border-[2px] border-myblue w-fit w-[90px] h-[90px] flexcenter rounded-[50%]">
                 <img
                   src="https://static.priceoye.pk//images/about-payment-cash.png"
                   alt="Error-Image"
@@ -55,7 +55,7 @@ function OfferingShopper() {
               <h3 className="text-[16px] text-myblack">Cash on Delivery</h3>
             </div>
             <div className="flexcenter flex-col gap-[13px]">
-              <div className="border-[2px] border-myblue w-fit w-[91px] h-[91px] flexcenter rounded-[50%]">
+              <div className="border-[2px] border-myblue w-fit w-[90px] h-[90px] flexcenter rounded-[50%]">
                 <img
                   src="https://static.priceoye.pk//images/about-payment-installment.png"
                   alt="Error-Image"
