@@ -2,7 +2,7 @@ import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProductData from "./ProductData";
+import { useSelector } from "react-redux";
 
 const CustomNextArrow = ({ onClick, ishover }) => {
   return (
@@ -31,6 +31,8 @@ function TabletIpadCard() {
   let [hover, setHover] = useState(null);
   let [ishover, setIsHover] = useState(false);
 
+  let tablet = useSelector((e) => e.products.tablet);
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -58,7 +60,7 @@ function TabletIpadCard() {
       onMouseLeave={() => setIsHover(false)}
     >
       <Slider {...settings}>
-        {ProductData.tablets.map((data, index) => {
+        {tablet.map((data, index) => {
           return (
             <div
               key={index}

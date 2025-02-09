@@ -15,9 +15,11 @@
   "dependencies": {
     "@mdi/font": "^7.4.47",
     "@react-google-maps/api": "^2.20.5",
+    "@reduxjs/toolkit": "^2.5.1",
     "bootstrap-icons": "^1.11.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.1",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1"

@@ -2,7 +2,8 @@ import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProductData from "./ProductData";
+import { useSelector } from "react-redux";
+
 
 const CustomNextArrow = ({ onClick, ishover }) => {
   return (
@@ -31,6 +32,9 @@ function SmartPhoneCard() {
   let [hover, setHover] = useState(null);
   let [ishover, setIsHover] = useState(false);
 
+  let smartphone = useSelector((e) => e.products.smartphone);
+
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -58,7 +62,7 @@ function SmartPhoneCard() {
       onMouseLeave={() => setIsHover(false)}
     >
       <Slider {...settings}>
-        {ProductData.smartPhones.map((data, index) => {
+        {smartphone.map((data, index) => {
           return (
             <div
               className="w-[210px] h-fit flex flex-col gap-[19px] px-4"

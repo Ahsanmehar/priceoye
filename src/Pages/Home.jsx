@@ -4,6 +4,7 @@ import Discount from "../Components/layout/Home/Discount";
 import TabletIpads from "../Components/layout/Home/TabletIpads";
 import MobileAccessorie from "../Components/layout/Home/MobileAccessories";
 import TrendingProducts from "../Components/layout/Home/TrendingProducts";
+import QuikViewPopUp from "../Components/layout/Home/QuikViewPopUp";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <TabletIpads />
       <MobileAccessorie />
       <TrendingProducts />
+      <QuikViewPopUp />
     </>
   );
 }

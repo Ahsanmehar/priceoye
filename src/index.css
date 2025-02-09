@@ -27,7 +27,7 @@
   @apply relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-myblue after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300;
 }
 .fivestar {
-  @apply text-myorange text-[14.5px] mr-[2px];
+  @apply text-myorange text-[15px] mr-[2px];
 }
 .heart {
   @apply text-[20px] py-[10px] px-[10px] text-myblack1 bg-white rounded-[50%] font-thin shadow-xl;

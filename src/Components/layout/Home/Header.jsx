@@ -1,14 +1,20 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import CartPopUp from "./CartPopUp";
 import WishlistPopUp from "./WishlistPopUp";
+import { useDispatch, useSelector } from "react-redux";
+import { isClickCart } from "../../Redux Toolkit/PopUpSlice";
+import { isClickWishlist } from "../../Redux Toolkit/PopUpSlice";
 
 function Header() {
-  const [showAddToCart, setShowAddToCart] = useState(false);
+  let dispatch = useDispatch();
+  let clickCart = useSelector((state) => state.popup.cartpopup);
+  let clickWishlist = useSelector((state) => state.popup.wishlistpopup);
+
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (showAddToCart) {
+    if (clickCart || clickWishlist) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
@@ -17,7 +23,7 @@ function Header() {
     return () => {
       document.body.style.overflow = "unset";
     };
-  }, [showAddToCart]);
+  }, [clickCart, clickWishlist]);
 
   return (
     <div className="bg-myblue w-full flexbox relative py-3 px-28">
@@ -42,29 +48,15 @@ function Header() {
         ></i>
         <i
           className="ri-shopping-cart-line icons"
-          onClick={() => setShowAddToCart(true)}
+          onClick={() => dispatch(isClickCart())}
         ></i>
         <i
           className="ri-heart-3-line icons"
-          onClick={() => setShowAddToCart(true)}
+          onClick={() => dispatch(isClickWishlist())}
         ></i>
       </div>
-      {showAddToCart ? (
-        <CartPopUp
-          CloseCart={() => setShowAddToCart(false)}
-          showAddToCart={showAddToCart}
-        />
-      ) : (
-        ""
-      )}
-      {showAddToCart ? (
-        <WishlistPopUp
-          CloseCart={() => setShowAddToCart(false)}
-          showAddToCart={showAddToCart}
-        />
-      ) : (
-        ""
-      )}
+      {clickCart ? <CartPopUp /> : ""}
+      {clickWishlist ? <WishlistPopUp /> : ""}
     </div>
   );
 }

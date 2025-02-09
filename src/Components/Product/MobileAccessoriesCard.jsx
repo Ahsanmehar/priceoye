@@ -1,12 +1,13 @@
 import { useState } from "react";
-import ProductData from "./ProductData";
+import { useSelector } from "react-redux";
 
 function MobibleAccessoriesCard() {
   let [hover, setHover] = useState(null);
+  let accessories = useSelector((e) => e.products.accessories);
 
   return (
     <div className="bg-mygra1 w-full h-fit px-5 flexbox">
-      {ProductData.accessories.map((data, index) => {
+      {accessories.map((data, index) => {
         return (
           <div
             className="w-[234px] h-fit flex flex-col gap-[19px] px-4"
