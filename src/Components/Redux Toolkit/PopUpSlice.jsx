@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  cartpopup: false,
+  cartpopup: null,
   wishlistpopup: false,
-  quikviewpopup: false,
+  quikviewpopup: null,
 };
 
 const PopUpSlice = createSlice({

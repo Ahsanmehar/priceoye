@@ -7,7 +7,8 @@ const initialState = {
   accessories: ProductData.accessories,
   trending: ProductData.trending,
 
-  trendingcart: [],
+  quickviewdata: null,
+  addtocartdata: [],
 };
 
 const ProductSlice = createSlice({
@@ -15,11 +16,15 @@ const ProductSlice = createSlice({
   initialState,
 
   reducers: {
+    quickview: (state, actions) => {
+      state.quickviewdata = actions.payload;
+    },
+
     addtocart: (state, actions) => {
-      state.trendingcart.push(actions.payload);
+      state.addtocartdata.push(actions.payload);
     },
   },
 });
 
-export const { addtocart } = ProductSlice.actions;
+export const { quickview, addtocart } = ProductSlice.actions;
 export default ProductSlice.reducer;

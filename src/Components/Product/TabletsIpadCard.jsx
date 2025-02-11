@@ -2,7 +2,9 @@ import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { isClickQuickView } from "../Redux Toolkit/PopUpSlice";
+import { quickview } from "../Redux Toolkit/ProductSlice";
 
 const CustomNextArrow = ({ onClick, ishover }) => {
   return (
@@ -30,8 +32,13 @@ const CustomPrevArrow = ({ onClick, ishover }) => {
 function TabletIpadCard() {
   let [hover, setHover] = useState(null);
   let [ishover, setIsHover] = useState(false);
-
   let tablet = useSelector((e) => e.products.tablet);
+  let dispatch = useDispatch();
+
+  function handleClick(data) {
+    dispatch(isClickQuickView());
+    dispatch(quickview(data));
+  }
 
   const settings = {
     infinite: true,
@@ -89,6 +96,7 @@ function TabletIpadCard() {
                           ? "translate-x-0 opacity-100 delay-100"
                           : "translate-x-4 opacity-0"
                       }`}
+                      onClick={() => handleClick(data)}
                     ></i>
                     <span className="hearttooltip">Quick View</span>
                   </div>

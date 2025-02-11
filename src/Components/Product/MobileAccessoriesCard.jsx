@@ -1,10 +1,17 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { isClickQuickView } from "../Redux Toolkit/PopUpSlice";
+import { quickview } from "../Redux Toolkit/ProductSlice";
 
 function MobibleAccessoriesCard() {
   let [hover, setHover] = useState(null);
   let accessories = useSelector((e) => e.products.accessories);
+  let dispatch = useDispatch();
 
+  function handleClick(data) {
+    dispatch(isClickQuickView());
+    dispatch(quickview(data));
+  }
   return (
     <div className="bg-mygra1 w-full h-fit px-5 flexbox">
       {accessories.map((data, index) => {
@@ -36,6 +43,7 @@ function MobibleAccessoriesCard() {
                         ? "translate-x-0 opacity-100 delay-100"
                         : "translate-x-4 opacity-0"
                     }`}
+                    onClick={() => handleClick(data)}
                   ></i>
                   <span className="hearttooltip">Quick View</span>
                 </div>

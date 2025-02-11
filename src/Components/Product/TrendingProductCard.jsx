@@ -1,14 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addtocart } from "../Redux Toolkit/ProductSlice";
+import { quickview } from "../Redux Toolkit/ProductSlice";
 import { isClickQuickView } from "../Redux Toolkit/PopUpSlice";
 
 function TrendingProduct() {
   let [hover, setHover] = useState(null);
   let trending = useSelector((state) => state.products.trending);
-  let clickQuickView = useSelector((state) => state.popup.quikviewpopup);
-  console.log(clickQuickView);
   let dispatch = useDispatch();
+
+  function handleClick(data) {
+    dispatch(isClickQuickView());
+    dispatch(quickview(data));
+  }
 
   return (
     <div className="bg-mygra1 w-[100%] h-[fit] flexbox flex-wrap">
@@ -41,7 +44,7 @@ function TrendingProduct() {
                         ? "translate-x-0 opacity-100 delay-100"
                         : "translate-x-4 opacity-0"
                     }`}
-                    onClick={() => dispatch(isClickQuickView())}
+                    onClick={() => handleClick(data)}
                   ></i>
                   <span className="hearttooltip">Quick View</span>
                 </div>
@@ -53,7 +56,6 @@ function TrendingProduct() {
                         ? "translate-x-0 opacity-100 delay-200"
                         : "translate-x-4 opacity-0"
                     }`}
-                    onClick={() => dispatch(addtocart(data))}
                   ></i>
                   <span className="hearttooltip">Select Options</span>
                 </div>
