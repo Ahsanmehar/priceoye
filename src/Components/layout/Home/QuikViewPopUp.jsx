@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 import { addtocart } from "../../Redux Toolkit/ProductSlice";
+import { increasecount, decreasecount } from "../../Redux Toolkit/ProductSlice";
 
 const CustomNextArrow = ({ onClick, ishover }) => {
   return (
@@ -67,10 +68,23 @@ function QuikViewPopUp() {
     };
   }, [QuickView]);
 
+  let productcount = useSelector((state) => state.products.productcount) || {};
+  let productid = quickviewdata?.id;
+  let count = productcount[productid] || 1;
+  // console.log("id:", productid, "count:", count);
+
   function handleClick(quickviewdata) {
-    dispatch(addtocart(quickviewdata));
+    let updateDate = { ...quickviewdata, count };
+    dispatch(addtocart(updateDate));
     dispatch(isClickQuickView());
     dispatch(isClickCart());
+  }
+
+  function increment() {
+    dispatch(increasecount({ productid }));
+  }
+  function decrement() {
+    dispatch(decreasecount({ productid }));
   }
   return (
     <div>
@@ -112,10 +126,10 @@ function QuikViewPopUp() {
               </div>
               <div className="flex items-center gap-[10px]">
                 <span className="text-[18.9px] text-mygray1 font-normal text-decoration: line-through">
-                  {quickviewdata.oldPrice}
+                  {`Rs ${quickviewdata.oldPrice}`}
                 </span>
                 <span className="text-[21px] text-myblack1 font-normal">
-                  {quickviewdata.newPrice}
+                  {`Rs ${quickviewdata.newPrice}`}
                 </span>
               </div>
               <h5 className="text-[14px] text-myblack1 w-[50%] text-center mx-auto leading-[26px] font-medium my-[17px]">
@@ -141,9 +155,15 @@ function QuikViewPopUp() {
               <div className="flex flex-col gap-[15px] my-[15px] w-fit">
                 <div className="flex items-center gap-[15px]">
                   <div className="w-[130px] h-[44px] border border-myblue rounded-full flex items-center justify-between overflow-hidden">
-                    <i className="ri-subtract-line w-10 h-10 flex items-center justify-center cursor-pointer text-myblue text-xs font-semibold hover:bg-[#eef1f6]"></i>
-                    <span className="text-[#4e5562] text-[13px]">0</span>
-                    <i className="ri-add-line w-10 h-10 flex items-center justify-center cursor-pointer text-myblue text-xs font-semibold hover:bg-[#eef1f6]"></i>
+                    <i
+                      className="ri-subtract-line w-10 h-10 flex items-center justify-center cursor-pointer text-myblue text-xs font-semibold hover:bg-[#eef1f6]"
+                      onClick={decrement}
+                    ></i>
+                    <span className="text-[#4e5562] text-[13px]">{count}</span>
+                    <i
+                      className="ri-add-line w-10 h-10 flex items-center justify-center cursor-pointer text-myblue text-xs font-semibold hover:bg-[#eef1f6]"
+                      onClick={increment}
+                    ></i>
                   </div>
                   <button
                     class="px-[35px] py-[12px] border-none outline-none cursor-pointer rounded-full text-[16px] text-white bg-myblue"
@@ -166,9 +186,7 @@ function QuikViewPopUp() {
             </div>
           </div>
         </div>
-      ) : (
-        ""
-      )}
+      ) : null}
     </div>
   );
 }

@@ -127,10 +127,10 @@ function TabletIpadCard() {
                 </div>
                 <div className="flex items-center gap-[10px]">
                   <span className="text-[15px] text-mygray1 font-normal text-decoration: line-through">
-                    {data.oldPrice}
+                  {`Rs ${data.oldPrice}`}
                   </span>
                   <span className="text-[16.5px] text-myblack1 font-normal">
-                    {data.newPrice}
+                  {`Rs ${data.newPrice}`}
                   </span>
                 </div>
               </div>
