@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { isClickQuickView } from "../Redux Toolkit/PopUpSlice";
 import { quickview } from "../Redux Toolkit/ProductSlice";
+import { addtowishlist } from "../Redux Toolkit/WishlistSlice";
 
 function MobibleAccessoriesCard() {
   let [hover, setHover] = useState(null);
@@ -30,25 +31,35 @@ function MobibleAccessoriesCard() {
               />
               <div className="absolute top-[5px] right-[-17px] flex flex-col gap-[15px]">
                 {/* Heart Icon */}
-                <div className="relative group inline-block">
+                <div
+                  className="relative group inline-block"
+                  onClick={() => {
+                    dispatch(addtowishlist(data));
+                  }}
+                >
                   <i className="ri-heart-line heart hearthover"></i>
                   <span className="hearttooltip">Add to Wishlist</span>
                 </div>
 
                 {/* Eye Icon */}
-                <div className="relative group inline-block">
+                <div
+                  className="relative group inline-block"
+                  onClick={() => handleClick(data)}
+                >
                   <i
                     className={`ri-eye-line heart transition-transform duration-300 hearthover ${
                       hover == index
                         ? "translate-x-0 opacity-100 delay-100"
                         : "translate-x-4 opacity-0"
                     }`}
-                    onClick={() => handleClick(data)}
                   ></i>
                   <span className="hearttooltip">Quick View</span>
                 </div>
                 {/* Plus Icon */}
-                <div className="relative group inline-block">
+                <div
+                  className="relative group inline-block"
+                  onClick={() => handleClick(data)}
+                >
                   <i
                     className={`ri-add-line heart transition-transform duration-300 hearthover ${
                       hover == index

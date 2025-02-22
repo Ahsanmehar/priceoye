@@ -5,6 +5,7 @@ import TabletIpads from "../Components/layout/Home/TabletIpads";
 import MobileAccessorie from "../Components/layout/Home/MobileAccessories";
 import TrendingProducts from "../Components/layout/Home/TrendingProducts";
 import QuikViewPopUp from "../Components/layout/Home/QuikViewPopUp";
+import ProductAddRemove from "../Components/Common/ProductAddRemove";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <MobileAccessorie />
       <TrendingProducts />
       <QuikViewPopUp />
+      <ProductAddRemove />
     </>
   );
 }

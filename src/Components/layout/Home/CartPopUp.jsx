@@ -9,7 +9,6 @@ function CartPopUp() {
   let addtocartdata = useSelector((state) => state.products.addtocartdata);
   const totalPrice = useSelector(selectTotalPrice);
   let dispatch = useDispatch();
-  console.log(totalPrice);
 
   return (
     <div className="h-[100vh] w-[100%] bg-pink-00 fixed z-40 top-0 left-0 bottom-0 right-0 flex">
@@ -26,7 +25,7 @@ function CartPopUp() {
         }`}
       >
         <div className="flexbox">
-          <h2 className="text-[24px] font-semibold">Shopping cart</h2>
+          <h2 className="text-[24px] text-myblue font-medium">Shopping cart</h2>
           <i
             className="ri-close-large-line text-[19px] font-medium pointer text-myblue"
             onClick={() => dispatch(isClickCart())}

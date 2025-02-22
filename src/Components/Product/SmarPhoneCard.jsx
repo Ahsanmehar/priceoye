@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useDispatch, useSelector } from "react-redux";
 import { isClickQuickView } from "../Redux Toolkit/PopUpSlice";
 import { quickview } from "../Redux Toolkit/ProductSlice";
+import { addtowishlist, removewishlist } from "../Redux Toolkit/WishlistSlice";
 
 const CustomNextArrow = ({ onClick, ishover }) => {
   return (
@@ -60,6 +61,21 @@ function SmartPhoneCard() {
       },
     ],
   };
+
+  let addtowishlistdata = useSelector(
+    (state) => state.wishlist.addtowishlistdata
+  );
+
+  function addwishlist(data) {
+    const index = addtowishlistdata.findIndex((item) => item.id === data.id);
+
+    if (index !== -1) {
+      dispatch(removewishlist(index));
+    } else {
+      dispatch(addtowishlist(data));
+    }
+  }
+
   return (
     <div
       className="bg-mygra1 w-full h-fit px-5"
@@ -83,25 +99,43 @@ function SmartPhoneCard() {
                 />
                 <div className="absolute top-[5px] right-[2px] flex flex-col gap-[15px]">
                   {/* Heart Icon */}
-                  <div className="relative group inline-block">
-                    <i className="ri-heart-line heart hearthover"></i>
+                  <div
+                    className="relative group inline-block"
+                    onClick={() => addwishlist(data)}
+                  >
+                    <i
+                      className={`ri-heart-line heart hearthover ${
+                        addtowishlistdata.some((item) => item.id == data.id)
+                          ? "bi bi-heart-fill text-red-100"
+                          : "ri-heart-line"
+                      }`}
+                    ></i>
                     <span className="hearttooltip">Add to Wishlist</span>
                   </div>
 
                   {/* Eye Icon */}
-                  <div className="relative group inline-block">
+                  <div
+                    className="relative group inline-block"
+                    onClick={() => {
+                      dispatch(handleClick(data));
+                    }}
+                  >
                     <i
                       className={`ri-eye-line heart transition-transform duration-300 hearthover ${
                         hover == index
                           ? "translate-x-0 opacity-100 delay-100"
                           : "translate-x-4 opacity-0"
                       }`}
-                      onClick={() => handleClick(data)}
                     ></i>
                     <span className="hearttooltip">Quick View</span>
                   </div>
                   {/* Plus Icon */}
-                  <div className="relative group inline-block">
+                  <div
+                    className="relative group inline-block"
+                    onClick={() => {
+                      dispatch(handleClick(data));
+                    }}
+                  >
                     <i
                       className={`ri-add-line heart transition-transform duration-300 hearthover ${
                         hover == index
@@ -127,10 +161,10 @@ function SmartPhoneCard() {
                 </div>
                 <div className="flex items-center gap-[10px]">
                   <span className="text-[15px] text-mygray1 font-normal text-decoration: line-through">
-                  {`Rs ${data.oldPrice}`}
+                    {`Rs ${data.oldPrice}`}
                   </span>
                   <span className="text-[16.5px] text-myblack1 font-normal">
-                  {`Rs ${data.newPrice}`}
+                    {`Rs ${data.newPrice}`}
                   </span>
                 </div>
               </div>
