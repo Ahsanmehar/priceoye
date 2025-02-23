@@ -36,6 +36,20 @@ function SmartPhoneCard() {
   let smartphone = useSelector((e) => e.products.smartphone);
   let dispatch = useDispatch();
 
+  let addtowishlistdata = useSelector(
+    (state) => state.wishlist.addtowishlistdata
+  );
+
+  function addwishlist(data) {
+    const index = addtowishlistdata.findIndex((item) => item.id === data.id);
+
+    if (index !== -1) {
+      dispatch(removewishlist(index));
+    } else {
+      dispatch(addtowishlist(data));
+    }
+  }
+
   function handleClick(data) {
     dispatch(isClickQuickView());
     dispatch(quickview(data));
@@ -54,31 +68,23 @@ function SmartPhoneCard() {
 
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1300,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
         },
       },
     ],
   };
 
-  let addtowishlistdata = useSelector(
-    (state) => state.wishlist.addtowishlistdata
-  );
-
-  function addwishlist(data) {
-    const index = addtowishlistdata.findIndex((item) => item.id === data.id);
-
-    if (index !== -1) {
-      dispatch(removewishlist(index));
-    } else {
-      dispatch(addtowishlist(data));
-    }
-  }
-
   return (
     <div
-      className="bg-mygra1 w-full h-fit px-5"
+      className=" w-full h-fit px-5"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >

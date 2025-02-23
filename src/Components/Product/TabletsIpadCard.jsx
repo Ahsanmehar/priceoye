@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useDispatch, useSelector } from "react-redux";
 import { isClickQuickView } from "../Redux Toolkit/PopUpSlice";
 import { quickview } from "../Redux Toolkit/ProductSlice";
-import { addtowishlist } from "../Redux Toolkit/WishlistSlice";
+import { addtowishlist, removewishlist } from "../Redux Toolkit/WishlistSlice";
 
 const CustomNextArrow = ({ onClick, ishover }) => {
   return (
@@ -35,6 +35,19 @@ function TabletIpadCard() {
   let [ishover, setIsHover] = useState(false);
   let tablet = useSelector((e) => e.products.tablet);
   let dispatch = useDispatch();
+  let addtowishlistdata = useSelector(
+    (state) => state.wishlist.addtowishlistdata
+  );
+
+  function addwishlist(data) {
+    const index = addtowishlistdata.findIndex((item) => item.id === data.id);
+
+    if (index !== -1) {
+      dispatch(removewishlist(index));
+    } else {
+      dispatch(addtowishlist(data));
+    }
+  }
 
   function handleClick(data) {
     dispatch(isClickQuickView());
@@ -54,9 +67,15 @@ function TabletIpadCard() {
 
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1300,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
         },
       },
     ],
@@ -86,9 +105,15 @@ function TabletIpadCard() {
                   {/* Heart Icon */}
                   <div
                     className="relative group inline-block"
-                    onClick={() => dispatch(addtowishlist(data))}
+                    onClick={() => addwishlist(data)}
                   >
-                    <i className="ri-heart-line heart hearthover"></i>
+                    <i
+                      className={`ri-heart-line heart hearthover ${
+                        addtowishlistdata.some((item) => item.id == data.id)
+                          ? "bi bi-heart-fill text-red-100"
+                          : "ri-heart-line"
+                      }`}
+                    ></i>
                     <span className="hearttooltip">Add to Wishlist</span>
                   </div>
 

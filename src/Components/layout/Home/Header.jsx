@@ -26,7 +26,7 @@ function Header() {
   }, [clickCart, clickWishlist]);
 
   return (
-    <div className="bg-myblue w-full flexbox relative py-3 px-28 sticky top-[0] left-[0] right-[0] z-40">
+    <div className="bg-myblue w-full flexbox relative py-3 px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] sticky top-[0] left-[0] right-[0] z-40">
       <img
         src="https://static.priceoye.pk/images/logo.svg"
         alt="Error Image"

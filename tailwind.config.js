@@ -61,6 +61,14 @@ export default {
           },
         },
       },
+
+      screens: {
+        "max-xxxl": { max: "1500px" },
+        "max-xxl": { max: "1400px" },
+        "max-xl": { max: "1300px" },
+        "max-l": { max: "1200px" },
+        "max-xxxl1": { max: "1100px" },
+      },
     },
   },
   plugins: [],

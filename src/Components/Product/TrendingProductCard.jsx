@@ -2,13 +2,26 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { quickview } from "../Redux Toolkit/ProductSlice";
 import { isClickQuickView } from "../Redux Toolkit/PopUpSlice";
-import { addtowishlist } from "../Redux Toolkit/WishlistSlice";
+import { addtowishlist, removewishlist } from "../Redux Toolkit/WishlistSlice";
 
 function TrendingProduct() {
   let [hover, setHover] = useState(null);
   let trending = useSelector((state) => state.products.trending);
   let dispatch = useDispatch();
 
+  let addtowishlistdata = useSelector(
+    (state) => state.wishlist.addtowishlistdata
+  );
+
+  function addwishlist(data) {
+    const index = addtowishlistdata.findIndex((item) => item.id === data.id);
+
+    if (index !== -1) {
+      dispatch(removewishlist(index));
+    } else {
+      dispatch(addtowishlist(data));
+    }
+  }
   function handleClick(data) {
     dispatch(isClickQuickView());
     dispatch(quickview(data));
@@ -34,11 +47,15 @@ function TrendingProduct() {
                 {/* Heart Icon */}
                 <div
                   className="relative group inline-block"
-                  onClick={() => {
-                    dispatch(addtowishlist(data));
-                  }}
+                  onClick={() => addwishlist(data)}
                 >
-                  <i className="ri-heart-line heart hearthover"></i>
+                  <i
+                    className={`ri-heart-line heart hearthover ${
+                      addtowishlistdata.some((item) => item.id == data.id)
+                        ? "bi bi-heart-fill text-red-100"
+                        : "ri-heart-line"
+                    }`}
+                  ></i>
                   <span className="hearttooltip">Add to Wishlist</span>
                 </div>
 

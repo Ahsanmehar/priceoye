@@ -6,7 +6,7 @@ function SignIn() {
   const navigate = useNavigate();
   return (
     <div className="w-[100%] h-[100vh] flex">
-      <div className="w-[35%] h-[100%] bg-pink-20 flex flex-col justify-between py-[30px] px-[90px]">
+      <div className="w-[35%] h-[100%] flex flex-col justify-between py-[30px] px-[90px] max-xxxl:px-[70px] max-xxl:px-[50px] max-xl:px-[25px]">
         <div className="w-[190px] bg-myblue py-[10px] px-[14px] rounded-[10px]">
           <img
             src="https://static.priceoye.pk/images/logo.svg"
@@ -60,7 +60,7 @@ function SignIn() {
           </button>
           <h5 className="orcontinuewith">or continue with</h5>
 
-          <div className="flexbox">
+          <div className="flex gap-[15px]">
             <FormButton name="Google" icon="ri-google-fill" />
             <FormButton name="Facebook" icon="ri-facebook-fill" />
             <FormButton name="Apple" icon="ri-apple-fill" />

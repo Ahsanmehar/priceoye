@@ -2,8 +2,8 @@ import DiscountProduct from "../../Common/DiscountProduct";
 
 function Discount() {
   return (
-    <div className="w-[100%] h-[90vh] px-28 flex flex-col justify-between">
-      <div className="w-[100%] h-[40vh] relative">
+    <div className="w-[100%] gap-[50px] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] flex flex-col justify-between">
+      <div className="w-[100%] relative">
         <img
           src="https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-7.jpg"
           alt="Error-Image"
@@ -17,7 +17,7 @@ function Discount() {
           <button className="button">Shop Now</button>
         </div>
       </div>
-      <div className="w-[100%] h-[43vh] flex gap-[30px]">
+      <div className="w-[100%] flex max-xxxl1:flex-wrap max-xxxl1:justify-between gap-[30px] max-xl:gap-[20px] max-xxxl1:gap-[10px] max-xxxl1:gap-[50px] ">
         <DiscountProduct />
       </div>
     </div>

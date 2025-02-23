@@ -1,6 +1,6 @@
 function HaveAQuestion() {
   return (
-    <div className="w-100% h-[70vh] mt-[80px] mb-[80px] px-28 flexbox">
+    <div className="w-100% my-[80px] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] flexbox">
       <div className="w-[44%] h-[100%] flex flex-col gap-[20px]">
         <h5 className="text-[15px] font-medium text-myblue">
           HAVE A QUESTIONS
@@ -37,7 +37,7 @@ function HaveAQuestion() {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.917927445214!2d74.36631107598228!3d31.36124395498601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919a848c0e92689%3A0x9ab08f8418d4e4af!2s5%20Number%20Stop!5e0!3m2!1sen!2s!4v1738244282325!5m2!1sen!2s"
           width="100%"
-          height="86%"
+          height="550px"
           allowfullscreen="full"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"

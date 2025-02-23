@@ -10,4 +10,16 @@ body {
   width: 100%;
   height: 100%;
 }
+::-webkit-scrollbar {
+  width: 6px; 
+  height: 6px; 
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: #48AFFF; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: white; 
+}

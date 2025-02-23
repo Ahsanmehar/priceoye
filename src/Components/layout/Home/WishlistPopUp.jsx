@@ -29,7 +29,7 @@ function WishlistPopUp() {
       ></div>
 
       <div
-        className={`w-[29%] h-full bg-white p-[27px] absolute right-[0] ${
+        className={`w-[29%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%]  h-full bg-white p-[27px] absolute right-[0] ${
           clickWishlist ? "animate-slide-right" : "animate-slide-right-reverse"
         }`}
       >
@@ -86,7 +86,7 @@ function WishlistPopUp() {
                     </div>
                     <div class="mt-5">
                       <i
-                        class="ri-close-large-line text-myblue cursor-pointer text-lg font-medium"
+                        class="ri-close-large-line text-myblue cursor-pointer text-lg font-medium mr-[15px]"
                         onClick={() => dispatch(removewishlist(index))}
                       ></i>
                     </div>

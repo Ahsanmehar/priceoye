@@ -90,9 +90,9 @@ function QuikViewPopUp() {
     <div>
       {QuickView ? (
         <div className="w-[100%] bg-black/75 fixed z-40 top-0 left-0 bottom-0 right-0 flexcenter">
-          <div className="w-[60%] h-fit bg-white px-[22px] py-[32px] flex justify-between items-center animate-my-anim">
+          <div className="w-[60%] max-xxxl:w-[65%] max-xl:w-[70%] h-fit bg-white px-[22px] py-[32px] flex justify-between items-center animate-my-anim">
             <div
-              className="w-[50%] h-[100%] bg-pink-10 cursor-grab"
+              className="w-[50%] h-[100%] cursor-grab"
               onMouseEnter={() => setIsHover(true)}
               onMouseLeave={() => setIsHover(false)}
             >
@@ -166,7 +166,7 @@ function QuikViewPopUp() {
                     ></i>
                   </div>
                   <button
-                    class="px-[35px] py-[12px] border-none outline-none cursor-pointer rounded-full text-[16px] text-white bg-myblue"
+                    class="px-[35px] py-[12px] border-none outline-none cursor-pointer rounded-full text-[16px] text-white bg-myblue whitespace-nowrap"
                     onClick={() => handleClick(quickviewdata)}
                   >
                     ADD TO CART

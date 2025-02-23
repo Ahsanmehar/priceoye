@@ -14,8 +14,8 @@ function Home() {
       <SmartPhones />
       <Discount />
       <TabletIpads />
-      <MobileAccessorie />
-      <TrendingProducts />
+      {/* <MobileAccessorie /> */}
+      {/* <TrendingProducts /> */}
       <QuikViewPopUp />
       <ProductAddRemove />
     </>

@@ -1,7 +1,7 @@
 function KeepInTouch() {
   return (
-    <div className="w-[100%] h-[58vh] px-28 flexbox">
-      <div className="w-[45%] h-[100%]">
+    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] flexbox">
+      <div className="w-[45%] h-[550px]">
         <img
           src="https://images.unsplash.com/photo-1546795729-f3a5d42087f5?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Error-Image"

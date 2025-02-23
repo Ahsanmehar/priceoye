@@ -8,7 +8,7 @@ function DiscountProduct() {
         return (
           <div
             key={index}
-            className="w-[400px] h-[100%] relative rounded-[10px]  overflow-hidden"
+            className="w-[400px] max-xxxl1:w-[500px] relative rounded-[10px] overflow-hidden"
           >
             <img
               src={data.image}
@@ -20,7 +20,7 @@ function DiscountProduct() {
               <span className="text-[12px] w-fit bg-[#dd283] bg-myblue font-medium text-white py-[5px] px-[12px] rounded-tr-[8px] rounded-br-[0px] rounded-bl-[8px]">
                 {data.title}
               </span>
-              <h2 className="text-[24px] font-medium  leading-[27px]">
+              <h2 className="text-[24px] max-xl:text-[22px] max-xxxl1:text-[28px]  font-medium leading-[27px]">
                 {data.subtitle}
               </h2>
               <h3 className="text-[16px] text-myblack1 font-medium">

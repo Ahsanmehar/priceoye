@@ -3,7 +3,7 @@ import TabletIpadCard from "../../Product/TabletsIpadCard";
 
 function TabletIpads() {
   return (
-    <div className="w-full h-[53vh] bg-pink-20 px-28 my-[100px] flex flex-col justify-between">
+    <div className="w-full px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] my-[100px] flex flex-col gap-[50px] max-xl:px-[30px]">
       <HeadingSection title="Tablets & iPads" />
       <TabletIpadCard />
     </div>

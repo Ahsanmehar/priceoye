@@ -23,8 +23,8 @@ function handleWhatapps() {
 
 function Footer() {
   return (
-    <div className="bg-myblue w-[100%] h-[51vh] px-28 py-[43px] flex flex-col justify-between text-white">
-      <div className="w-[100%] h-[80%] flexbox">
+    <div className="bg-myblue w-[100%] h-[51vh px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] py-[43px] flex flex-col gap-[20px] text-white">
+      <div className="w-[100%] flex justify-between">
         <div className="w-[20%] h-[100%]">
           <img
             src="https://static.priceoye.pk//icons/po-footer-logo-white.svg"
@@ -171,7 +171,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-[100%] h-[15%] flexcenter text-[16px]">
+      <div className="w-[100%] flexcenter text-[16px]">
         <h2>© 2025 PriceOye - All Rights Reserved.</h2>
       </div>
     </div>
