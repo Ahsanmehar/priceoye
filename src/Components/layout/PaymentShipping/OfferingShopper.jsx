@@ -1,7 +1,7 @@
 function OfferingShopper() {
   return (
-    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] flexbox my-[110px]">
-      <div className="w-[48%] h-[90%] flex flex-col gap-[20px]">
+    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] flexbox max-xxl2:flex-col max-xxl2:items-start max-xxl2:gap-[50px] my-[110px]">
+      <div className="w-[48%]  max-xxl2:w-[100%] h-[550px] flex flex-col gap-[20px]">
         <img
           src="https://static.priceoye.pk//images/about-payment-cards.png"
           alt="Error-Image"
@@ -9,8 +9,8 @@ function OfferingShopper() {
         />
       </div>
 
-      <div className="w-[45%] h-[100%] flex flex-col gap-[25px]">
-        <h1 className="text-[46px] font-semibold">
+      <div className="w-[45%] max-l:w-[47%] max-xxl2:w-[78%] h-[100%] flex flex-col gap-[25px]">
+        <h1 className="text-[46px] max-l:text-[34px] font-semibold">
           Offering Multiple Payment Options
         </h1>
         <p className="text-[16px] text-myblack">

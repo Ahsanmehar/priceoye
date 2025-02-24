@@ -46,15 +46,6 @@ function QuikViewPopUp() {
     pauseOnHover: true,
     nextArrow: <CustomNextArrow ishover={ishover} />,
     prevArrow: <CustomPrevArrow ishover={ishover} />,
-
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
   };
 
   useEffect(() => {
@@ -90,7 +81,7 @@ function QuikViewPopUp() {
     <div>
       {QuickView ? (
         <div className="w-[100%] bg-black/75 fixed z-40 top-0 left-0 bottom-0 right-0 flexcenter">
-          <div className="w-[60%] max-xxxl:w-[65%] max-xl:w-[70%] h-fit bg-white px-[22px] py-[32px] flex justify-between items-center animate-my-anim">
+          <div className="w-[60%] max-xxxl:w-[65%] max-xl:w-[70%] max-l:w-[75%] max-xxxl1:w-[83%] max-xxl2:w-[90%] h-fit bg-white px-[22px] py-[32px] flex justify-between items-center animate-my-anim">
             <div
               className="w-[50%] h-[100%] cursor-grab"
               onMouseEnter={() => setIsHover(true)}

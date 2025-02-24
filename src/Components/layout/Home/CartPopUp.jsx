@@ -105,10 +105,10 @@ function CartPopUp() {
                 </h3>
               </div>
               <div className="flex items-center justify-center gap-2">
-                <button className="px-16 py-3 rounded-full text-lg font-medium text-[#333d4c] bg-[#eef1f6] whitespace-nowrap hover:bg-[#e0e5eb]">
+                <button className="px-16 max-l:px-[60px] py-3 rounded-full text-lg max-l:text-[16px] font-medium text-[#333d4c] bg-[#eef1f6] whitespace-nowrap hover:bg-[#e0e5eb]">
                   View cart
                 </button>
-                <button className="px-16 py-3 rounded-full text-lg text-white bg-myblue whitespace-nowrap">
+                <button className="px-16 max-l:px-[60px] py-3 rounded-full text-lg max-l:text-[16px] text-white bg-myblue whitespace-nowrap">
                   Checkout
                 </button>
               </div>

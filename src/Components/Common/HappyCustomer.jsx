@@ -17,7 +17,7 @@ function HappyCustomer({ num, unit, title, color }) {
 
   return (
     <div className="flexcenter flex-col w-fit">
-      <h1 className="text-[32px] font-semibold" style={{ color: color }}>
+      <h1 className="text-[32px] max-l:text-[26px] font-semibold" style={{ color: color }}>
         {count}
         {unit}
       </h1>

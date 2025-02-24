@@ -6,8 +6,8 @@ function SignIn() {
   const navigate = useNavigate();
   return (
     <div className="w-[100%] h-[100vh] flex">
-      <div className="w-[35%] h-[100%] flex flex-col justify-between py-[30px] px-[90px] max-xxxl:px-[70px] max-xxl:px-[50px] max-xl:px-[25px]">
-        <div className="w-[190px] bg-myblue py-[10px] px-[14px] rounded-[10px]">
+      <div className="w-[35%] max-xxxl1:w-[40%] h-[100%] flex flex-col justify-between py-[30px] px-[90px] max-xxxl:px-[70px] max-xxl:px-[50px] max-xl:px-[25px]">
+        <div className="w-[190px] max-l:w-[150px] bg-myblue py-[10px] px-[14px] rounded-[10px]">
           <img
             src="https://static.priceoye.pk/images/logo.svg"
             alt="Error-Image"
@@ -17,7 +17,7 @@ function SignIn() {
         </div>
 
         <form className="flex flex-col gap-[20px]">
-          <h1 className="text-[32px] font-medium">Welcome back</h1>
+          <h1 className="text-[32px] max-l:text-[30px] font-medium">Welcome back</h1>
           <h5 className="text-[14px] text-myblack font-normal flex gap-[10px]">
             Don't have an account?
             <span
@@ -77,7 +77,7 @@ function SignIn() {
           </h6>
         </div>
       </div>
-      <div className="w-[65%] h-[100%] bg-myblue relative">
+      <div className="w-[65%] max-xxxl1:w-[60%] h-[100%] bg-myblue relative">
         <FormRightSection
           heading="New Here?"
           subHeading="Sign up now and open the door to new opportunities.Discover exciting features tailored just for you.Connect, explore, and achieve more than ever.Your journey starts with a single click—join us today!"

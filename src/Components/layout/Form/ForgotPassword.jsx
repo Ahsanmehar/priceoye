@@ -7,8 +7,8 @@ function ForgetPassword() {
   return (
     <h1>
       <div className="w-[100%] h-[100vh] flex">
-        <div className="w-[35%] h-[100%] bg-pink-20 flex flex-col justify-between py-[30px] px-[90px] max-xxxl:px-[70px] max-xxl:px-[50px] max-xl:px-[25px]">
-          <div className="w-[190px] bg-myblue py-[10px] px-[14px] rounded-[10px]">
+        <div className="w-[35%] max-xxxl1:w-[40%] h-[100%] bg-pink-20 flex flex-col justify-between py-[30px] px-[90px] max-xxxl:px-[70px] max-xxl:px-[50px] max-xl:px-[25px]">
+          <div className="w-[190px] max-l:w-[150px] bg-myblue py-[10px] px-[14px] rounded-[10px]">
             <img
               src="https://static.priceoye.pk/images/logo.svg"
               alt="Error-Image"
@@ -18,7 +18,7 @@ function ForgetPassword() {
           </div>
 
           <form className="flex flex-col gap-[20px]">
-            <h1 className="text-[32px] font-medium">Forgot password?</h1>
+            <h1 className="text-[32px] max-l:text-[30px] font-medium">Forgot password?</h1>
             <h5 className="text-[15px] text-myblack font-normal">
               Enter the email address you used when you joined and we’ll send
               you instructions to reset your password
@@ -44,7 +44,7 @@ function ForgetPassword() {
           </div>
         </div>
 
-        <div className="w-[65%] h-[100%] bg-myblue relative">
+        <div className="w-[65%] max-xxxl1:w-[60%] h-[100%] bg-myblue relative">
           <FormRightSection
             heading="One of us?"
             subHeading="Welcome back! If you already have an account, sign in now. We’ve missed your presence and can’t wait to have you back. Reconnect with everything you love in just a click. Let’s continue where you left off—sign in today!"

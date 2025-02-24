@@ -27,12 +27,16 @@ function Header() {
 
   return (
     <div className="bg-myblue w-full flexbox relative py-3 px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] sticky top-[0] left-[0] right-[0] z-40">
+      <div className="flex hidden max-l:block">
+        <i className="bi bi-list text-[30px] text-white font-thin mr-[15px] cursor-pointer"></i>
+        <i className="bi bi-search text-[20px] text-white font-thin cursor-pointer"></i>
+      </div>
       <img
         src="https://static.priceoye.pk/images/logo.svg"
         alt="Error Image"
         className="w-32 h-12"
       />
-      <form className="position w-96">
+      <form className="position w-96 max-l:hidden">
         <input
           type="text"
           placeholder="I'm shopping for ..."
