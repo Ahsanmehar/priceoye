@@ -31,12 +31,16 @@ function DeliveryData() {
       {deliveryOptions.map((data, i) => {
         return (
           <div
-            className="w-[20%] max-xl:w-[23%] max-xxxl1:w-[24%] max-xxl2:w-[32%] border-r-[1px] border-myblue flex items-center gap-[18px]"
+            className="w-[20%] max-xl:w-[23%] max-xxxl1:w-[24%] max-xxl2:w-[32%] max-xxl2:w-[48%] max-2:w-[100%] border-r-[1px] border-myblue flex items-center gap-[18px]"
             key={i}
           >
-            <i className={`text-[40px] max-xxxl1:text-[32px] text-myblue ${data.icon}`}></i>
+            <i
+              className={`text-[40px] max-xxxl1:text-[32px] text-myblue ${data.icon}`}
+            ></i>
             <div>
-              <h3 className="text-[18px] max-xxxl1:text-[16.8px] whitespace-nowrap">{data.title}</h3>
+              <h3 className="text-[18px] max-xxxl1:text-[16.8px] whitespace-nowrap">
+                {data.title}
+              </h3>
               <h4 className="text-[14px] text-myblack">{data.description}</h4>
             </div>
           </div>

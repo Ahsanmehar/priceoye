@@ -81,9 +81,9 @@ function QuikViewPopUp() {
     <div>
       {QuickView ? (
         <div className="w-[100%] bg-black/75 fixed z-40 top-0 left-0 bottom-0 right-0 flexcenter">
-          <div className="w-[60%] max-xxxl:w-[65%] max-xl:w-[70%] max-l:w-[75%] max-xxxl1:w-[83%] max-xxl2:w-[90%] h-fit bg-white px-[22px] py-[32px] flex justify-between items-center animate-my-anim">
+          <div className="w-[60%] max-l4:h-[100%] max-l4:overflow-y-auto max-xxxl:w-[65%] max-xl:w-[70%] max-l:w-[75%] max-xxxl1:w-[83%] max-xxl2:w-[93%] max-xl3:w-[100%] h-fit bg-white px-[22px] py-[32px] flex max-l4:flex-col justify-between max-l4:gap-[50px] items-center animate-my-anim">
             <div
-              className="w-[50%] h-[100%] cursor-grab"
+              className="w-[50%] max-xl3:w-[45%] max-l4:w-[100%] h-[100%] cursor-grab"
               onMouseEnter={() => setIsHover(true)}
               onMouseLeave={() => setIsHover(false)}
             >
@@ -100,7 +100,7 @@ function QuikViewPopUp() {
                 />
               </Slider>
             </div>
-            <div className="w-[47%] h-[100%] bg-pink-20 flex flex-col gap-[10px]">
+            <div className="w-[47%] max-xl3:w-[52%] max-l4:w-[100%] h-[100%] flex flex-col gap-[10px]">
               <i
                 className="ri-close-large-line text-[19px] font-medium pointer ml-auto text-myblue"
                 onClick={() => dispatch(isClickQuickView())}
@@ -143,7 +143,7 @@ function QuikViewPopUp() {
                   {quickviewdata.battery}
                 </li>
               </ul>
-              <div className="flex flex-col gap-[15px] my-[15px] w-fit">
+              <div className="flex flex-col gap-[15px] my-[15px] w-fit max-l4:w-full">
                 <div className="flex items-center gap-[15px]">
                   <div className="w-[130px] h-[44px] border border-myblue rounded-full flex items-center justify-between overflow-hidden">
                     <i

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="w-full flex px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] gap-16 max-l:hidde">
+    <div className="w-full flex px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] gap-16 max-l:hidden">
       <div className=" bg-white text-nowrap	flexcenter">Browse Categories</div>
       <div className="flex items-center w-full gap-16 py-6">
         <NavLink

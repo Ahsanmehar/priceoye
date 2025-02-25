@@ -9,8 +9,8 @@ function FormRightSection({ heading, subHeading, buttonText, buttonAction }) {
         className="w-[100%] h-[100%] object-cover"
       />
       <div className="position flexcenter flex-col gap-[20px] w-full text-white">
-        <h1 className="text-[48px] max-l:text-[38px] font-semibold">{heading}</h1>
-        <h4 className="text-[19px] max-l:text-[17px] w-[70%] max-l:w-[85%] text-center leading-[28px]">
+        <h1 className="text-[48px] max-l:text-[38px] max-2:text-[30px] font-semibold">{heading}</h1>
+        <h4 className="text-[19px] max-l:text-[17px] max-2:text-[15px] w-[70%] max-l:w-[85%] text-center leading-[28px] max-2:leading-[24px]">
           {subHeading}
         </h4>
         <button

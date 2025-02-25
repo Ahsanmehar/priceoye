@@ -79,6 +79,36 @@ function SmartPhoneCard() {
           slidesToShow: 4,
         },
       },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2.7,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2.3,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
     ],
   };
 
@@ -155,7 +185,7 @@ function SmartPhoneCard() {
               </div>
 
               <div className="flex flex-col gap-[4px] mt-[18px]">
-                <h2 className="text-[17.25px] text-myblack1 font-medium leading-5 pointer">
+                <h2 className="text-[17.25px] max-2:text-[15px] text-myblack1 font-medium leading-5 pointer">
                   {data.name}
                 </h2>
                 <div>
@@ -166,10 +196,10 @@ function SmartPhoneCard() {
                   <i className="ri-star-fill fivestar"></i>
                 </div>
                 <div className="flex items-center gap-[10px]">
-                  <span className="text-[15px] text-mygray1 font-normal text-decoration: line-through">
+                  <span className="text-[15px] max-2:text-[13px] text-mygray1 font-normal text-decoration: line-through">
                     {`Rs ${data.oldPrice}`}
                   </span>
-                  <span className="text-[16.5px] text-myblack1 font-normal">
+                  <span className="text-[16.5px] max-2:text-[15px] text-myblack1 font-normal">
                     {`Rs ${data.newPrice}`}
                   </span>
                 </div>

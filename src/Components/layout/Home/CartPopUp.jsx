@@ -20,12 +20,12 @@ function CartPopUp() {
       ></div>
 
       <div
-        className={`w-[30%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] h-full bg-white p-[27px] absolute right-[0] ${
+        className={`w-[30%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] max-xxl2:w-[50%] max-xl3:w-[55%] max-l4:w-[60%] max-1:w-[70%] max-2:w-[90%] h-full bg-white p-[27px] absolute right-[0] ${
           clickCart ? "animate-slide-right" : "animate-slide-right-reverse"
         }`}
       >
         <div className="flexbox">
-          <h2 className="text-[24px] text-myblue font-medium">Shopping cart</h2>
+          <h2 className="text-[24px] max-2:text-[20px] text-myblue font-medium">Shopping cart</h2>
           <i
             className="ri-close-large-line text-[19px] font-medium pointer text-myblue"
             onClick={() => dispatch(isClickCart())}

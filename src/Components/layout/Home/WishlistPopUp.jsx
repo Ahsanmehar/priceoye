@@ -20,7 +20,7 @@ function WishlistPopUp() {
 
   let dispatch = useDispatch();
   return (
-    <div className="h-[100vh] w-[100%] bg-pink-00 absolute z-40 top-0 left-0 bottom-0 right-0 flex">
+    <div className="h-[100vh] w-[100%] absolute z-40 top-0 left-0 bottom-0 right-0 flex">
       <div
         className={`w-[100%] h-full bg-black/75 ${
           clickWishlist ? "animate-slide-left" : "animate-slide-left-reverse"
@@ -29,12 +29,12 @@ function WishlistPopUp() {
       ></div>
 
       <div
-        className={`w-[29%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%]  h-full bg-white p-[27px] absolute right-[0] ${
+        className={`w-[29%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] max-xxl2:w-[50%] max-xl3:w-[55%] max-l4:w-[60%] max-1:w-[70%] max-2:w-[90%] h-full bg-white p-[27px] absolute right-[0] ${
           clickWishlist ? "animate-slide-right" : "animate-slide-right-reverse"
         }`}
       >
         <div className="flexbox">
-          <h2 className="text-[24px] text-myblue font-medium">Wishlist</h2>
+          <h2 className="text-[24px] max-2:text-[21px] text-myblue font-medium">Wishlist</h2>
           <i
             className="ri-close-large-line text-[19px] text-myblue font-medium pointer"
             onClick={() => dispatch(isClickWishlist())}

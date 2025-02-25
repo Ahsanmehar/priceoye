@@ -24,8 +24,8 @@ function handleWhatapps() {
 function Footer() {
   return (
     <div className="bg-myblue w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] py-[43px] flex flex-col gap-[20px] max-xxxl1:gap-[45px] text-white">
-      <div className="w-[100%] flex justify-between max-xxxl1:flex-col max-xxxl1:gap-[50px] max-xxxl1:items-center">
-        <div className="w-[23%] max-xxxl1:w-[fit] h-[100%]">
+      <div className="w-[100%] flex justify-between max-xxxl1:flex-col max-xxxl1:gap-[50px] max-xxxl1:items-center max-l4:items-start">
+        <div className="w-[23%] max-xxxl1:w-[fit] max-l4:w-[100%] h-[100%]">
           <img
             src="https://static.priceoye.pk//icons/po-footer-logo-white.svg"
             alt="Error-Image"
@@ -42,7 +42,7 @@ function Footer() {
               Purana Kahana, Ferozepur Road, Lahore, Pakistan
             </a>
             <h5
-              className="text-[17px] max-l:text-[16px] flex items-center gap-[10px] pointer"
+              className="text-[17px] max-l:text-[16px] flex items-center gap-[10px] pointer whitespace-nowrap"
               onClick={handlePhone}
             >
               <i className="ri-phone-fill text-[30px] max-l:text-[27px]"></i>+92
@@ -55,7 +55,7 @@ function Footer() {
               <i className="ri-mail-line text-[30px] max-l:text-[27px]"></i>
               Ahsanmeharj@gmail.com
             </h5>
-            <div className="flexcenter gap-[17px]">
+            <div className="flexcenter max-xxxl1:justify-start gap-[17px]">
               <i className="ri-facebook-box-line text-[35px] max-l:text-[32px] pointer"></i>
               <i className="ri-instagram-line text-[35px] max-l:text-[32px] pointer"></i>
               <i className="ri-telegram-2-line text-[35px] max-l:text-[32px] pointer"></i>
@@ -66,7 +66,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-[75%] max-xxxl1:w-[100%] flex justify-between">
+        <div className="w-[75%] max-xxxl1:w-[100%] flex justify-between max-l4:flex-col max-l4:gap-[35px]">
           <div className="h-[100%] flex flex-col gap-[20px]">
             <h1 className="text-[28px] max-l:text-[25px] font-medium font-semibold">
               Stay in touch with us

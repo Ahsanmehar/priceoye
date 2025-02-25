@@ -24,7 +24,7 @@ function Slider() {
     [count];
 
   return (
-    <div className="w-full h-[58vh] relative">
+    <div className="w-full h-[59vh] max-xxxl1:h-[50vh] max-xl3:h-[40vh] max-1:h-[30vh] relative">
       <img
         key={animationKey}
         src={slides[count]}
