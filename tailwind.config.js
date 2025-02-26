@@ -73,6 +73,7 @@ export default {
         "max-l4": { max: "800px" },
         "max-1": { max: "700px" },
         "max-2": { max: "600px" },
+        "max-3": { max: "500px" },
       },
     },
   },

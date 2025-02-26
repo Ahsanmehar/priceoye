@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 function LoveToHear() {
   const navigate = useNavigate();
   return (
-    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] flexbox flex-col gap-[30px] items-center my-[80px]">
+    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] flexbox flex-col gap-[30px] items-center my-[80px] max-2:my-[40px]">
       <h1 className="text-[46px] max-l:text-[35px] max-2:text-[28px] font-semibold">We’d love to hear from you!</h1>
       <p className="text-[16px] max-2:text-[15px] text-myblack text-center leading-[26px]">
         We’d love to hear from you! If you have any questions about your trip,

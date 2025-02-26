@@ -20,7 +20,7 @@ function CartPopUp() {
       ></div>
 
       <div
-        className={`w-[30%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] max-xxl2:w-[50%] max-xl3:w-[55%] max-l4:w-[60%] max-1:w-[70%] max-2:w-[90%] h-full bg-white p-[27px] absolute right-[0] ${
+        className={`w-[30%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] max-xxl2:w-[50%] max-xl3:w-[55%] max-l4:w-[60%] max-1:w-[70%] max-2:w-[90%] max-3:w-[100%] h-full bg-white p-[27px] absolute right-[0] max-3:overflow-y-auto ${
           clickCart ? "animate-slide-right" : "animate-slide-right-reverse"
         }`}
       >
@@ -104,11 +104,11 @@ function CartPopUp() {
                   {`Rs: ${totalPrice}`}
                 </h3>
               </div>
-              <div className="flex items-center justify-center gap-2">
-                <button className="px-16 max-l:px-[60px] py-3 rounded-full text-lg max-l:text-[16px] font-medium text-[#333d4c] bg-[#eef1f6] whitespace-nowrap hover:bg-[#e0e5eb]">
+              <div className="flex items-center justify-center gap-2 max-3:flex-col max-3:py-[20px]">
+                <button className="px-16 max-3:w-full max-l:px-[60px] py-3 rounded-full text-lg max-l:text-[16px] font-medium text-[#333d4c] bg-[#eef1f6] whitespace-nowrap hover:bg-[#e0e5eb]">
                   View cart
                 </button>
-                <button className="px-16 max-l:px-[60px] py-3 rounded-full text-lg max-l:text-[16px] text-white bg-myblue whitespace-nowrap">
+                <button className="px-16 max-3:w-full max-l:px-[60px] py-3 rounded-full text-lg max-l:text-[16px] text-white bg-myblue whitespace-nowrap">
                   Checkout
                 </button>
               </div>

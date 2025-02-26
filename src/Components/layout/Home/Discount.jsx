@@ -2,7 +2,7 @@ import DiscountProduct from "../../Common/DiscountProduct";
 
 function Discount() {
   return (
-    <div className="w-[100%] gap-[50px] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] flex flex-col">
+    <div className="w-[100%] gap-[50px] max-2:gap-[30px] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] max-3:px-[8px] flex flex-col">
       <div className="w-[100%] relative">
         <img
           src="https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2023/11/banner-7.jpg"
