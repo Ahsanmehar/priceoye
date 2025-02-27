@@ -20,7 +20,7 @@ function CartPopUp() {
       ></div>
 
       <div
-        className={`w-[30%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] max-xxl2:w-[50%] max-xl3:w-[55%] max-l4:w-[60%] max-1:w-[70%] max-2:w-[90%] max-3:w-[100%] h-full bg-white p-[27px] absolute right-[0] max-3:overflow-y-auto ${
+        className={`w-[30%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] max-xxl2:w-[50%] max-xl3:w-[55%] max-l4:w-[60%] max-1:w-[70%] max-2:w-[90%] max-3:w-[100%] h-full bg-white p-[27px] max-3:px-[12px] max-3:py-[15px] absolute right-[0] max-3:overflow-y-auto ${
           clickCart ? "animate-slide-right" : "animate-slide-right-reverse"
         }`}
       >
@@ -34,7 +34,7 @@ function CartPopUp() {
 
         {addtocartdata == 0 ? (
           <>
-            <div className="flex items-center flex-col gap-[16px] mt-[20px]">
+            <div className="flex items-center flex-col gap-[16px] mt-[20px] ">
               <i
                 className={`text-[70px] font-thin text-myblack1 bi bi-cart-plus`}
               ></i>
@@ -45,7 +45,7 @@ function CartPopUp() {
                 Explore our wide range of products and add items to your cart to
                 proceed with your purchase.
               </h5>
-              <button className="button">Continue Shopping</button>
+              <button className="button2">Continue Shopping</button>
             </div>
           </>
         ) : (
@@ -88,7 +88,7 @@ function CartPopUp() {
                     </div>
                     <div class="mt-5">
                       <i
-                        class="ri-close-large-line text-myblue cursor-pointer text-lg font-medium mr-[15px]"
+                        class="ri-close-large-line text-myblue cursor-pointer text-lg font-medium mr-[15px] max-3:mr-[0px]"
                         onClick={() => dispatch(removecart(index))}
                       ></i>
                     </div>

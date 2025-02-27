@@ -29,7 +29,7 @@ function WishlistPopUp() {
       ></div>
 
       <div
-        className={`w-[29%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] max-xxl2:w-[50%] max-xl3:w-[55%] max-l4:w-[60%] max-1:w-[70%] max-2:w-[90%] h-full bg-white p-[27px] absolute right-[0] ${
+        className={`w-[29%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] max-xxl2:w-[50%] max-xl3:w-[55%] max-l4:w-[60%] max-1:w-[70%] max-2:w-[90%] max-3:w-[100%] h-full bg-white p-[27px] max-3:py-[15px] max-3:px-[12px] absolute right-[0] ${
           clickWishlist ? "animate-slide-right" : "animate-slide-right-reverse"
         }`}
       >
@@ -52,11 +52,11 @@ function WishlistPopUp() {
             <h5 className="text-myblack text-[14px] text-center">
               Save your favorite items and view them here at any time.
             </h5>
-            <button className="button">Continue Shopping</button>
+            <button className="button2">Continue Shopping</button>
           </div>
         ) : (
           <>
-            <div class="flex flex-col items-center mt-[28px] gap-7 h-[90%] w-full overflow-y-auto">
+            <div class="flex flex-col items-center mt-[28px] gap-7 h-[90%] w-full overflow-y-auto bg-pink-100">
               {addtowishlistdata.map((data, index) => {
                 return (
                   <div
@@ -86,7 +86,7 @@ function WishlistPopUp() {
                     </div>
                     <div class="mt-5">
                       <i
-                        class="ri-close-large-line text-myblue cursor-pointer text-lg font-medium mr-[15px]"
+                        class="ri-close-large-line text-myblue cursor-pointer text-lg font-medium mr-[15px] max-3:mr-[0px]"
                         onClick={() => dispatch(removewishlist(index))}
                       ></i>
                     </div>

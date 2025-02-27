@@ -26,7 +26,7 @@ function Header() {
   }, [clickCart, clickWishlist]);
 
   return (
-    <div className="bg-myblue w-full flexbox relative py-3 px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] max-3:px-[8px] sticky top-[0] left-[0] right-[0] z-40">
+    <div className="bg-myblue w-full flexbox relative py-3 max-3:py-[7px] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] max-3:px-[8px] sticky top-[0] left-[0] right-[0] z-40">
       <div className="flex hidden max-l:block">
         <i className="bi bi-list text-[30px] max-3:text-[25px] text-white font-thin mr-[15px] max-3:mr-[10px] cursor-pointer"></i>
         <i className="bi bi-search text-[20px] max-3:text-[17px] text-white font-thin cursor-pointer"></i>

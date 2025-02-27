@@ -27,7 +27,7 @@ const deliveryOptions = [
 
 function DeliveryData() {
   return (
-    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] max-3:px-[8px] py-[40px] border-myblue border-b-[1px] border-t-[1px] mb-[70px] max-2:mb-[40px] flexbox max-xxl2:flex-wrap max-xxl2:gap-y-[25px]">
+    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[25px] py-[40px] border-myblue border-b-[1px] border-t-[1px] mb-[70px] max-2:mb-[40px] flexbox max-xxl2:flex-wrap max-xxl2:gap-y-[25px]">
       {deliveryOptions.map((data, i) => {
         return (
           <div

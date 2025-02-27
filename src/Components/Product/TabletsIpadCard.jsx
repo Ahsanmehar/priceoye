@@ -102,17 +102,11 @@ function TabletIpadCard() {
           slidesToShow: 2,
         },
       },
-      {
-        breakpoint: 450,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
     ],
   };
   return (
     <div
-      className="bg-mygra1 w-full h-fit px-5"
+      className=" w-full h-fit"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >

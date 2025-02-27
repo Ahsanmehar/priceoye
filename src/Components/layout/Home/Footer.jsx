@@ -23,13 +23,13 @@ function handleWhatapps() {
 
 function Footer() {
   return (
-    <div className="bg-myblue w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] py-[43px] flex flex-col gap-[20px] max-3:px-[8px] max-xxxl1:gap-[45px] text-white">
+    <div className="bg-myblue w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] py-[43px] max-3:py-[15px] flex flex-col gap-[20px] max-xxxl1:gap-[45px] text-white">
       <div className="w-[100%] flex justify-between max-xxxl1:flex-col max-xxxl1:gap-[50px] max-xxxl1:items-center max-l4:items-start">
         <div className="w-[23%] max-xxxl1:w-[fit] max-l4:w-[100%] h-[100%]">
           <img
             src="https://static.priceoye.pk//icons/po-footer-logo-white.svg"
             alt="Error-Image"
-            className="w-[190px] max-l:w-[150px] h-[74px] max-l:h-[50px] mb-[10px]"
+            className="w-[190px] max-l:w-[140px] max-3:w-[130px] h-[74px] max-l:h-[50px] mb-[10px]"
           />
 
           <div className="flex flex-col gap-[6px]">
@@ -55,7 +55,7 @@ function Footer() {
               <i className="ri-mail-line text-[30px] max-l:text-[27px]"></i>
               Ahsanmeharj@gmail.com
             </h5>
-            <div className="flexcenter max-xxxl1:justify-start gap-[17px]">
+            <div className="flexcenter max-xxxl1:justify-start gap-[17px] max-3:gap-[12px]">
               <i className="ri-facebook-box-line text-[35px] max-l:text-[32px] pointer"></i>
               <i className="ri-instagram-line text-[35px] max-l:text-[32px] pointer"></i>
               <i className="ri-telegram-2-line text-[35px] max-l:text-[32px] pointer"></i>
@@ -67,8 +67,8 @@ function Footer() {
           </div>
         </div>
         <div className="w-[75%] max-xxxl1:w-[100%] flex justify-between max-l4:flex-col max-l4:gap-[35px]">
-          <div className="h-[100%] flex flex-col gap-[20px]">
-            <h1 className="text-[28px] max-l:text-[25px] max-2:text-[23px] max-2:px font-medium">
+          <div className="h-[100%] flex flex-col gap-[20px] max-3:gap-[13px]">
+            <h1 className="text-[28px] max-l:text-[25px] max-2:text-[23px] max-3:text-[19px] font-semibold">
               Stay in touch with us
             </h1>
             <h5 className="text-[16px] max-l:text-[15px] font-medium">
@@ -87,7 +87,7 @@ function Footer() {
             </form>
           </div>
           <div className="h-[100%]">
-            <h2 className="text-[28px] max-l:text-[25px] max-2:text-[23px] font-medium mb-[19px]">
+            <h2 className="text-[28px] max-l:text-[25px] max-2:text-[23px] max-3:text-[17px] font-semibold mb-[19px]">
               Categories
             </h2>
             <div className="flex flex-col gap-[10px]">
@@ -126,7 +126,7 @@ function Footer() {
             </div>
           </div>
           <div className="h-[100%]">
-            <h2 className="text-[28px] max-l:text-[25px] max-2:text-[23px] font-medium mb-[19px] whitespace-nowrap">
+            <h2 className="text-[28px] max-l:text-[25px] max-2:text-[23px] max-3:text-[17px] font-semibold mb-[19px] whitespace-nowrap">
               Customer service
             </h2>
             <div className="flex flex-col gap-[10px]">
