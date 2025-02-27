@@ -31,10 +31,10 @@ function ProductAddRemove() {
   return (
     <>
       {showPop && (
-        <div className="w-[500px] h-[60px] bg-white rounded-[8px] flex items-center justify-end gap-[80px] px-[10px] border-l-[4px] border-myblue shadow-lg shadow-black-500 fixed bottom-[7%] left-[50%] translate-x-[-50%]">
+        <div className="min-w-[30%] h-[60px] bg-white rounded-[8px] flex items-center justify-end gap-[80px] max-l4:gap-[40px] px-[10px] border-l-[4px] border-myblue shadow-lg shadow-black-500 fixed bottom-[7%] left-[50%] translate-x-[-50%]">
           <div className="flex items-center gap-[10px]">
             <i className="bi bi-check-circle text-myblue"></i>
-            <h3 className="text-[14px] font-normal">
+            <h3 className="text-[14px] font-normal whitespace-nowrap">
               {status === "added"
                 ? "Product added to wishlist successfully!"
                 : "Product removed from wishlist successfully!"}

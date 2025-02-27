@@ -5,7 +5,7 @@ function HaveAQuestion() {
         <h5 className="text-[15px] font-medium text-myblue">
           HAVE A QUESTIONS
         </h5>
-        <h1 className="text-[46px] max-l:text-[35px] max-2:text-[23px] font-semibold">
+        <h1 className="text-[46px] max-l:text-[35px] max-2:text-[23px] font-semibold text-myblack1">
           Leave Us A Message?
         </h1>
         <p className="text-[16px] max-2:text-[15px] text-myblack">

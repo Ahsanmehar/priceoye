@@ -4,6 +4,7 @@ const initialState = {
   cartpopup: null,
   wishlistpopup: false,
   quikviewpopup: null,
+  rightnavbar: false,
 };
 
 const PopUpSlice = createSlice({
@@ -20,9 +21,12 @@ const PopUpSlice = createSlice({
     isClickQuickView: (state) => {
       state.quikviewpopup = !state.quikviewpopup;
     },
+    isRightNavbar: (state) => {
+      state.quikviewpopup = !state.quikviewpopup;
+    },
   },
 });
 
-export const { isClickCart, isClickWishlist, isClickQuickView } =
+export const { isClickCart, isClickWishlist, isClickQuickView, isRightNavbar } =
   PopUpSlice.actions;
 export default PopUpSlice.reducer;

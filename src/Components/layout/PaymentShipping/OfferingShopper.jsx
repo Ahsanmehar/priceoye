@@ -10,7 +10,7 @@ function OfferingShopper() {
       </div>
 
       <div className="w-[45%] max-l:w-[47%] max-xxl2:w-[78%] max-2:w-[100%] h-[100%] flex flex-col gap-[25px]">
-        <h1 className="text-[46px] max-l:text-[34px] max-2:text-[23px] font-semibold">
+        <h1 className="text-[46px] max-l:text-[34px] max-2:text-[23px] font-semibold text-myblack1">
           Offering Multiple Payment Options
         </h1>
         <p className="text-[16px] max-2:text-[15px] text-myblack">

@@ -104,7 +104,7 @@ function CartPopUp() {
                   {`Rs: ${totalPrice}`}
                 </h3>
               </div>
-              <div className="flex items-center justify-center gap-2 max-3:flex-col max-3:py-[20px]">
+              <div className="flex items-center justify-center gap-2 max-3:flex-col max-3:pb-[60px]">
                 <button className="px-16 max-3:w-full max-l:px-[60px] py-3 rounded-full text-lg max-l:text-[16px] font-medium text-[#333d4c] bg-[#eef1f6] whitespace-nowrap hover:bg-[#e0e5eb]">
                   View cart
                 </button>

@@ -10,7 +10,7 @@ function KeepInTouch() {
       </div>
       <div className="w-[50%] max-xxl2:w-[100%] h-[100%] flex flex-col gap-[15px]">
         <h5 className="text-[15px] font-medium text-myblue">KEEP IN TOUCH</h5>
-        <h1 className="text-[46px] max-l:text-[33px] max-1:text-[25px] font-semibold">
+        <h1 className="text-[46px] max-l:text-[33px] max-1:text-[25px] font-semibold text-myblack1">
           Do You Have Some Questions?
         </h1>
         <p className="text-[16px] max-1:text-[15px] text-myblack">
@@ -25,7 +25,7 @@ function KeepInTouch() {
               <i className="bi bi-house-door text-[20px] max-1:text-[19px] text-white"></i>
             </div>
             <div>
-              <h2 className="text-[24px] max-1:text-[19px] font-medium">Email</h2>
+              <h2 className="text-[24px] max-1:text-[19px] font-medium text-myblack1">Email</h2>
               <h5 className="text-[16px] max-1:text-[15px] text-myblack">
                 Ahsanmeharj@gmail.com
               </h5>
@@ -36,7 +36,7 @@ function KeepInTouch() {
               <i className="bi bi-telephone text-[20px] max-1:text-[19px] text-white"></i>
             </div>
             <div>
-              <h2 className="text-[24px] max-1:text-[19px] font-medium">Phone Number</h2>
+              <h2 className="text-[24px] max-1:text-[19px] font-medium text-myblack1">Phone Number</h2>
               <h5 className="text-[16px] max-1:text-[15px] text-myblack">+92 309 7230656</h5>
             </div>
           </div>
@@ -45,7 +45,7 @@ function KeepInTouch() {
               <i className="bi bi-geo-alt text-[20px] max-1:text-[19px] text-white"></i>
             </div>
             <div>
-              <h2 className="text-[24px] max-1:text-[19px] font-medium">Location</h2>
+              <h2 className="text-[24px] max-1:text-[19px] font-medium text-myblack1">Location</h2>
               <h5 className="text-[16px] max-1:text-[15px] text-myblack">
                 Purana Kahana, Ferozepur Road, Lahore, Pakistan
               </h5>

@@ -8,7 +8,7 @@ function StoreLocator() {
     <>
       <Store />
       <StoreMap />
-      {/* <TrendingProducts /> */}
+      <TrendingProducts />
       <LoveToHear />
     </>
   );

@@ -8,7 +8,7 @@ function DeliveringAll() {
       />
       <div className="w-[100%] h-[100%] bg-myblue bg-opacity-[10%] absolute top-[0] left-[50%] translate-x-[-50%] flex justify-center pt-[50px] max-2:pt-[30px]">
         <div className="flex flex-col gap-[70px] max-2:gap-[40px]">
-          <h1 className="text-[30px] max-1:text-[23px] font-medium text-black text-center">
+          <h1 className="text-[30px] max-1:text-[23px] font-medium text-black text-center text-myblack1">
             Delivering all across Pakistan
           </h1>
 
