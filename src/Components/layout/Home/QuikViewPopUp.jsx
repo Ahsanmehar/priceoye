@@ -83,7 +83,7 @@ function QuikViewPopUp() {
         <div className="w-[100%] bg-black/75 fixed z-40 top-0 left-0 bottom-0 right-0 flexcenter">
           <div className="w-[60%] max-l4:h-[100%] max-l4:overflow-y-auto max-xxxl:w-[65%] max-xl:w-[70%] max-l:w-[75%] max-xxxl1:w-[83%] max-xxl2:w-[93%] max-xl3:w-[100%] h-fit bg-white px-[22px] py-[32px] flex max-l4:flex-col justify-between max-l4:gap-[50px] items-center animate-my-anim">
             <div
-              className="w-[50%] max-xl3:w-[45%] max-l4:w-[100%] h-[100%] cursor-grab"
+              className="w-[50%] max-xl3:w-[45%] max-l4:w-[100%] h-[100%] max-3:h-[100%] cursor-grab"
               onMouseEnter={() => setIsHover(true)}
               onMouseLeave={() => setIsHover(false)}
             >
@@ -105,7 +105,7 @@ function QuikViewPopUp() {
                 className="ri-close-large-line text-[19px] font-medium pointer ml-auto text-myblue"
                 onClick={() => dispatch(isClickQuickView())}
               ></i>
-              <h2 className="text-[24px] text-myblack1 font-medium leading-[35px] pointer">
+              <h2 className="text-[24px] max-3:text-[18px] text-myblack1 font-medium leading-[35px] pointer">
                 {quickviewdata.name}
               </h2>
               <div>
@@ -116,14 +116,14 @@ function QuikViewPopUp() {
                 <i className="ri-star-fill fivestar"></i>
               </div>
               <div className="flex items-center gap-[10px]">
-                <span className="text-[18.9px] text-mygray1 font-normal text-decoration: line-through">
+                <span className="text-[18.9px] max-3:text-[15px] text-mygray1 font-normal text-decoration: line-through">
                   {`Rs ${quickviewdata.oldPrice}`}
                 </span>
-                <span className="text-[21px] text-myblack1 font-normal">
+                <span className="text-[21px] max-3:text-[17px] text-myblack1 font-normal">
                   {`Rs ${quickviewdata.newPrice}`}
                 </span>
               </div>
-              <h5 className="text-[14px] text-myblack1 w-[50%] text-center mx-auto leading-[26px] font-medium my-[17px]">
+              <h5 className="text-[14px] text-myblack1 w-[50%] text-center mx-auto leading-[26px] font-medium my-[17px] whitespace-nowrap">
                 {quickviewdata.ptaApproval}
               </h5>
               <ul className="space-y-[7px] list-disc ml-[20px] marker:text-myblue">
@@ -145,7 +145,7 @@ function QuikViewPopUp() {
               </ul>
               <div className="flex flex-col gap-[15px] my-[15px] w-fit max-l4:w-full">
                 <div className="flex items-center gap-[15px]">
-                  <div className="w-[130px] h-[44px] border border-myblue rounded-full flex items-center justify-between overflow-hidden">
+                  <div className="w-[130px] max-3:w-[110px]  h-[44px] border border-myblue rounded-full flex items-center justify-between overflow-hidden">
                     <i
                       className="ri-subtract-line w-10 h-10 flex items-center justify-center cursor-pointer text-myblue text-xs font-semibold hover:bg-[#eef1f6]"
                       onClick={decrement}
@@ -157,15 +157,15 @@ function QuikViewPopUp() {
                     ></i>
                   </div>
                   <button
-                    class="px-[35px] py-[12px] border-none outline-none cursor-pointer rounded-full text-[16px] text-white bg-myblue whitespace-nowrap"
+                    class="px-[35px] max-3:px-[27px] py-[12px] border-none outline-none cursor-pointer rounded-full text-[16px] max-3:text-[13px] text-white bg-myblue whitespace-nowrap"
                     onClick={() => handleClick(quickviewdata)}
                   >
                     ADD TO CART
-                  </button>
-                  <i className="bi bi-heart w-[47px] h-[47px] flexcenter text-[21px] rounded-[50%] pointer border-[1px] border-myblue text-myblack"></i>
+                  </button> 
+                  <i className="bi bi-heart w-[47px] max-3:w-[43px] text-myblue h-[47px] max-3:h-[43px]  flexcenter text-[21px] rounded-[50%] pointer border-[1px] border-myblue text-myblack"></i>
                 </div>
                 <div className="flex items-center gap-[15px]">
-                  <button className="bg-myblue w-full py-[10px] rounded-[50px] text-white">
+                  <button className="bg-myblue w-full py-[10px] max-3:text-[13px]  rounded-[50px] text-white">
                     BUY IT NOW
                   </button>
                 </div>

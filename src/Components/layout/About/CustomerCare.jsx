@@ -21,7 +21,7 @@ function CustomerCare() {
   }
 
   return (
-    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px]">
+    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] max-3:px-[10px]">
       <div className="w-[100%] h-[100%] bg-myblue rounded-[50px] flexbox flex-col gap-[15px] px-[20px] py-[30px]">
         <h1 className="text-[40px] max-l:text-[35px] max-1:text-[30px] max-2:text-[25px] font-semibold text-white">Customer Care</h1>
         <p className="text-center w-[90%] max-1:w-full text-white max-2:text-[15px] leading-[25px]">

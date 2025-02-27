@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="w-[100%] flex items-center max-xxl2:flex-col max-xxl2:items-start max-xxl2:gap-[70px] max-2:gap-[40px] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] my-[110px] max-2:my-[40px]">
+    <div className="w-[100%] flex items-center max-xxl2:flex-col max-xxl2:items-start max-xxl2:gap-[70px] max-2:gap-[40px] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] max-3:px-[10px] my-[110px] max-2:my-[40px]">
       <div className="w-[48%] max-3:w-[100%] h-[100%] flex flex-col justify-center gap-[20px] max-2:gap-[10px]">
         <h1 className="text-[46px] max-l:text-[35px] max-2:text-[25px] font-semibold w-fit whitespace-nowrap">CONTACT US</h1>
         <h5 className="text-[16px] max-1:text-[15px] text-myblack font-normal whitespace-nowrap max-3:whitespace-normal">

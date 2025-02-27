@@ -42,9 +42,9 @@ function WishlistPopUp() {
         </div>
 
         {addtowishlistdata == 0 ? (
-          <div className="flex items-center flex-col gap-[16px] mt-[20px]">
+          <div className="flex items-center flex-col gap-[16px] max-3:gap-[14px] mt-[20px]">
             <i
-              className={`text-[70px] font-thin text-myblack1 bi bi-heart`}
+              className={`text-[70px] max-3:text-[50px] font-thin text-myblack1 bi bi-heart`}
             ></i>
             <h4 className="text-[16px] text-myblack2">
               Your wishlist is currently empty!
@@ -56,7 +56,7 @@ function WishlistPopUp() {
           </div>
         ) : (
           <>
-            <div class="flex flex-col items-center mt-[28px] gap-7 h-[90%] w-full overflow-y-auto bg-pink-100">
+            <div class="flex flex-col items-center mt-[28px] gap-7 h-[90%] w-full overflow-y-auto">
               {addtowishlistdata.map((data, index) => {
                 return (
                   <div
@@ -77,11 +77,11 @@ function WishlistPopUp() {
                         {data.newPrice}
                       </h4>
                       <button
-                        className="no-underline text-myblack text-[15px] flexcenter gap-[10px] w-fit"
+                        className="no-underline text-myblack text-[15px] max-3:text-[14px] flexcenter gap-[10px] max-3:gap-[8px] w-fit"
                         onClick={() => handleClick(data)}
                       >
                         View full details
-                        <i className="bi bi-arrow-right text-lg text-myblue"></i>
+                        <i className="bi bi-arrow-right text-lg max-3:text-[16px] text-myblue"></i>
                       </button>
                     </div>
                     <div class="mt-5">

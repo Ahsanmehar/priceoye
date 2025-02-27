@@ -34,9 +34,9 @@ function CartPopUp() {
 
         {addtocartdata == 0 ? (
           <>
-            <div className="flex items-center flex-col gap-[16px] mt-[20px] ">
+            <div className="flex items-center flex-col gap-[16px] max-3:gap-[14px]  mt-[20px] ">
               <i
-                className={`text-[70px] font-thin text-myblack1 bi bi-cart-plus`}
+                className={`text-[70px] max-3:text-[50px]  font-thin text-myblack1 bi bi-cart-plus`}
               ></i>
               <h4 className="text-[16px] text-myblack2">
                 Your shopping cart is currently empty!

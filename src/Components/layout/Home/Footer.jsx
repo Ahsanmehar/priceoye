@@ -67,7 +67,7 @@ function Footer() {
           </div>
         </div>
         <div className="w-[75%] max-xxxl1:w-[100%] flex justify-between max-l4:flex-col max-l4:gap-[35px]">
-          <div className="h-[100%] flex flex-col gap-[20px] max-3:gap-[13px]">
+          <div className="h-[100%] flex flex-col gap-[20px] max-3:gap-[15px]">
             <h1 className="text-[28px] max-l:text-[25px] max-2:text-[23px] max-3:text-[19px] font-semibold">
               Stay in touch with us
             </h1>

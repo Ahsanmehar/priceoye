@@ -27,7 +27,7 @@ const deliveryOptions = [
 
 function DeliveryData() {
   return (
-    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[25px] py-[40px] border-myblue border-b-[1px] border-t-[1px] mb-[70px] max-2:mb-[40px] flexbox max-xxl2:flex-wrap max-xxl2:gap-y-[25px]">
+    <div className="w-[100%] px-28 max-xxxl:px-[80px] max-xxl:px-[60px] max-xl:px-[30px] max-l:px-[20px] py-[40px] border-myblue border-b-[1px] border-t-[1px] mb-[70px] max-2:mb-[40px] flexbox max-xxl2:flex-wrap max-xxl2:gap-y-[25px] max-3:gap-[30px]">
       {deliveryOptions.map((data, i) => {
         return (
           <div
@@ -35,7 +35,7 @@ function DeliveryData() {
             key={i}
           >
             <i
-              className={`text-[40px] max-xxxl1:text-[32px] text-myblue ${data.icon}`}
+              className={`text-[40px] max-xxxl1:text-[32px] max-3:text-[29px] text-myblue ${data.icon}`}
             ></i>
             <div>
               <h3 className="text-[18px] max-xxxl1:text-[16.8px] whitespace-nowrap">
