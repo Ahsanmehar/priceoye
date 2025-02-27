@@ -108,7 +108,7 @@ function SmartPhoneCard() {
 
   return (
     <div
-      className=" w-full h-fit bg-pink-100"
+      className=" w-full h-fit"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
