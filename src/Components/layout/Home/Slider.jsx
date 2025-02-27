@@ -24,19 +24,19 @@ function Slider() {
     [count];
 
   return (
-    <div className="w-full h-[59vh] max-xxxl1:h-[50vh] max-xl3:h-[40vh] max-1:h-[30vh] relative">
+    <div className="w-full h-[59vh] max-xxxl1:h-[50vh] max-xl3:h-[40vh] max-1:h-[30vh] max-3:h-[18vh]  relative">
       <img
         key={animationKey}
         src={slides[count]}
         className="w-full h-full object-cover animate-fade-in"
       />
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-3">
+      <div className="absolute bottom-4 max-3:bottom-[6px]  left-1/2 transform -translate-x-1/2 flex gap-3">
         {slides.map((_, i) => {
           return (
             <div
               key={i}
               onClick={() => setCount(i)}
-              className={`w-[8px] h-[8px] rounded-full cursor-pointer ${
+              className={`w-[8px] max-1:w-[6px] h-[8px] max-3:h-[6px]  rounded-full cursor-pointer ${
                 i == count ? "bg-myblue" : "bg-gray-400"
               }`}
             ></div>

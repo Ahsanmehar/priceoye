@@ -56,12 +56,12 @@ function SmartPhoneCard() {
   }
 
   const settings = {
-    infinite: true,
+    // infinite: true,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
     pauseOnHover: true,
     nextArrow: <CustomNextArrow ishover={ishover} />,
     prevArrow: <CustomPrevArrow ishover={ishover} />,
@@ -103,18 +103,12 @@ function SmartPhoneCard() {
           slidesToShow: 2,
         },
       },
-      {
-        breakpoint: 450,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
     ],
   };
 
   return (
     <div
-      className=" w-full h-fit px-5"
+      className=" w-full h-fit bg-pink-100"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
@@ -127,13 +121,13 @@ function SmartPhoneCard() {
               onMouseEnter={() => setHover(index)}
               onMouseLeave={() => setHover(null)}
             >
-              <div className="bg-mygra w-[100%] h-[214px] relative pointer">
+              <div className="w-[100%] relative pointer">
                 <img
                   src={data.images[0]}
                   alt="Error-Image"
                   className="w-[214px] h-[100%] object-cover"
                 />
-                <div className="absolute top-[5px] right-[2px] flex flex-col gap-[15px]">
+                <div className="absolute top-[5px] right-[2px] max-4:right-[5px] flex flex-col gap-[15px]">
                   {/* Heart Icon */}
                   <div
                     className="relative group inline-block"

@@ -74,6 +74,7 @@ export default {
         "max-1": { max: "700px" },
         "max-2": { max: "600px" },
         "max-3": { max: "500px" },
+        "max-4": { max: "450px" },
       },
     },
   },
