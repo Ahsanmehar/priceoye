@@ -2,9 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   cartpopup: null,
-  wishlistpopup: false,
+  wishlistpopup: null,
   quikviewpopup: null,
-  rightnavbar: false,
+  rightnavbar: null,
 };
 
 const PopUpSlice = createSlice({
@@ -22,7 +22,7 @@ const PopUpSlice = createSlice({
       state.quikviewpopup = !state.quikviewpopup;
     },
     isRightNavbar: (state) => {
-      state.quikviewpopup = !state.quikviewpopup;
+      state.rightnavbar = !state.rightnavbar;
     },
   },
 });

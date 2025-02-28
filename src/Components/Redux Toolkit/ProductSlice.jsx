@@ -83,8 +83,11 @@ const ProductSlice = createSlice({
         (total, item) => total + item.newPrice * item.count,
         0
       );
-
       return new Intl.NumberFormat("en-US").format(total);
+    },
+
+    selectTotalCount: (state) => {
+      return state.addtocartdata.reduce((total, item) => total + item.count, 0);
     },
   },
 });
@@ -96,5 +99,5 @@ export const {
   increasecount,
   decreasecount,
 } = ProductSlice.actions;
-export const { selectTotalPrice } = ProductSlice.selectors;
+export const { selectTotalPrice, selectTotalCount } = ProductSlice.selectors;
 export default ProductSlice.reducer;

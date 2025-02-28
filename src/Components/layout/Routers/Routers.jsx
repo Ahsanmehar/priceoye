@@ -13,6 +13,7 @@ import ForgetPassword from "../Form/ForgotPassword";
 import DeliveryData from "../Home/DeliveryData";
 import BackToTop from "../../Common/BackToTop";
 import WhattsappButton from "../../Common/WhattsappButton";
+import RightNavbar from "../../Common/RightNavbar";
 
 let router = createBrowserRouter([
   {
@@ -26,6 +27,7 @@ let router = createBrowserRouter([
         <Footer />
         <BackToTop />
         <WhattsappButton />
+        <RightNavbar />
       </div>
     ),
   },
@@ -40,6 +42,7 @@ let router = createBrowserRouter([
         <Footer />
         <BackToTop />
         <WhattsappButton />
+        <RightNavbar />
       </div>
     ),
   },
@@ -54,6 +57,7 @@ let router = createBrowserRouter([
         <Footer />
         <BackToTop />
         <WhattsappButton />
+        <RightNavbar />
       </div>
     ),
   },
@@ -68,6 +72,7 @@ let router = createBrowserRouter([
         <Footer />
         <BackToTop />
         <WhattsappButton />
+        <RightNavbar />
       </div>
     ),
   },
@@ -82,6 +87,7 @@ let router = createBrowserRouter([
         <Footer />
         <BackToTop />
         <WhattsappButton />
+        <RightNavbar />
       </div>
     ),
   },

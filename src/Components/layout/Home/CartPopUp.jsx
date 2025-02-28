@@ -11,7 +11,7 @@ function CartPopUp() {
   let dispatch = useDispatch();
 
   return (
-    <div className="h-[100vh] w-[100%] bg-pink-00 fixed z-40 top-0 left-0 bottom-0 right-0 flex">
+    <div className="h-[100vh] w-[100%] fixed z-40 top-0 left-0 bottom-0 right-0 flex">
       <div
         className={`w-[100%] h-full bg-black/75 ${
           clickCart ? "animate-slide-left" : "animate-slide-left-reverse"
@@ -20,7 +20,7 @@ function CartPopUp() {
       ></div>
 
       <div
-        className={`w-[30%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] max-xxl2:w-[50%] max-xl3:w-[55%] max-l4:w-[60%] max-1:w-[70%] max-2:w-[90%] max-3:w-[100%] h-full bg-white p-[27px] max-3:px-[12px] max-3:py-[15px] absolute right-[0] max-3:overflow-y-auto ${
+        className={`w-[30%] max-xxxl:w-[35%] max-xl:w-[40%] max-xxxl1:w-[45%] max-xxl2:w-[50%] max-xl3:w-[55%] max-l4:w-[60%] max-1:w-[70%] max-2:w-[90%] max-3:w-[100%] h-full bg-white p-[27px] max-3:px-[12px] max-3:py-[15px] absolute right-[0] overflow-y-auto ${
           clickCart ? "animate-slide-right" : "animate-slide-right-reverse"
         }`}
       >

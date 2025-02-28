@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { selectTotalCount } from "./ProductSlice";
 
 const initialState = {
   addtowishlistdata: JSON.parse(localStorage.getItem("addtowishlist")) || [],
@@ -31,7 +32,12 @@ const WishlistSlice = createSlice({
       );
     },
   },
+
+  selectors: {
+    selectWislistCount: (state) => state.addtowishlistdata.length,
+  },
 });
 
 export const { addtowishlist, removewishlist } = WishlistSlice.actions;
+export const { selectWislistCount } = WishlistSlice.selectors;
 export default WishlistSlice.reducer;

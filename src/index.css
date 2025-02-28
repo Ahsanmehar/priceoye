@@ -15,10 +15,16 @@
   @apply cursor-pointer;
 }
 .icons {
-  @apply cursor-pointer text-white text-xl font-thin;
+  @apply relative cursor-pointer text-white text-xl font-thin;
+}
+.badge {
+  @apply absolute top-[-7px] max-2:top-[-4px] right-[-10px] bg-myblack text-white text-[11px] max-2:text-[10px] w-5 max-2:w-4 h-5 max-2:h-4 font-medium flex items-center justify-center rounded-full;
 }
 .navbar {
   @apply text-myblack1;
+}
+.rightnavbar {
+  @apply text-myblack1 w-fit text-[16px] max-3:text-[14px];
 }
 .isActive {
   @apply relative after:content-[''] after:absolute after:left-0 after:-bottom-px after:w-full after:h-[2px] after:bg-myblue;
@@ -75,4 +81,3 @@
 .whattsappbutton {
   @apply fixed bottom-[10px] left-[30px] pointer rounded-[50%] w-[50px];
 }
-
