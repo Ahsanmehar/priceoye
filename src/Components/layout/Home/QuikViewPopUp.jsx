@@ -6,6 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 import { addtocart } from "../../Redux Toolkit/ProductSlice";
 import { increasecount, decreasecount } from "../../Redux Toolkit/ProductSlice";
+import {
+  addtowishlist,
+  removewishlist,
+} from "../../Redux Toolkit/WishlistSlice";
 
 const CustomNextArrow = ({ onClick, ishover }) => {
   return (
@@ -77,11 +81,33 @@ function QuikViewPopUp() {
   function decrement() {
     dispatch(decreasecount({ productid }));
   }
+
+  let addtowishlistdata = useSelector(
+    (state) => state.wishlist.addtowishlistdata
+  );
+
+  function addwishlist(quickviewdata) {
+    const index = addtowishlistdata.findIndex(
+      (item) => item.id === quickviewdata.id
+    );
+    if (index !== -1) {
+      dispatch(removewishlist(index));
+    } else {
+      dispatch(addtowishlist(quickviewdata));
+    }
+  }
   return (
     <div>
       {QuickView ? (
-        <div className="w-[100%] bg-black/75 fixed z-40 top-0 left-0 bottom-0 right-0 flexcenter">
-          <div className="w-[60%] max-l4:h-[100%] max-l4:overflow-y-auto max-xxxl:w-[65%] max-xl:w-[70%] max-l:w-[75%] max-xxxl1:w-[83%] max-xxl2:w-[93%] max-xl3:w-[100%] h-fit bg-white px-[22px] py-[32px] flex max-l4:flex-col justify-between max-l4:gap-[50px] items-center animate-my-anim">
+        <div
+          className="w-[100%] bg-black/75 fixed z-40 top-0 left-0 bottom-0 right-0 flexcenter"
+          onClick={() => dispatch(isClickQuickView())}
+          oncli
+        >
+          <div
+            className="w-[60%] max-l4:h-[100%] max-l4:overflow-y-auto max-xxxl:w-[65%] max-xl:w-[70%] max-l:w-[75%] max-xxxl1:w-[83%] max-xxl2:w-[93%] max-xl3:w-[100%] h-fit bg-white px-[22px] py-[32px] flex max-l4:flex-col justify-between max-l4:gap-[50px] items-center animate-my-anim"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div
               className="w-[50%] max-xl3:w-[45%] max-l4:w-[100%] h-[100%] max-3:h-[100%] cursor-grab"
               onMouseEnter={() => setIsHover(true)}
@@ -161,8 +187,17 @@ function QuikViewPopUp() {
                     onClick={() => handleClick(quickviewdata)}
                   >
                     ADD TO CART
-                  </button> 
-                  <i className="bi bi-heart w-[47px] max-3:w-[43px] text-myblue h-[47px] max-3:h-[43px]  flexcenter text-[21px] rounded-[50%] pointer border-[1px] border-myblue text-myblack"></i>
+                  </button>
+                  <i
+                    className={`ri-heart-line w-[47px] max-3:w-[43px] text-myblue h-[47px] max-3:h-[43px]  flexcenter text-[21px] rounded-[50%] pointer border-[1px] border-myblue text-myblack  ${
+                      addtowishlistdata.some(
+                        (item) => item?.id == quickviewdata?.id
+                      )
+                        ? "bi bi-heart-fill"
+                        : "ri-heart-line"
+                    }`}
+                    onClick={() => addwishlist(quickviewdata)}
+                  ></i>
                 </div>
                 <div className="flex items-center gap-[15px]">
                   <button className="bg-myblue w-full py-[10px] max-3:text-[13px]  rounded-[50px] text-white">

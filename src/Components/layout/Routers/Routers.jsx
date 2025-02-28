@@ -14,6 +14,7 @@ import DeliveryData from "../Home/DeliveryData";
 import BackToTop from "../../Common/BackToTop";
 import WhattsappButton from "../../Common/WhattsappButton";
 import RightNavbar from "../../Common/RightNavbar";
+import ProductAddRemove from "../../Common/ProductAddRemove";
 
 let router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ let router = createBrowserRouter([
         <BackToTop />
         <WhattsappButton />
         <RightNavbar />
+        <ProductAddRemove />
       </div>
     ),
   },
@@ -43,6 +45,7 @@ let router = createBrowserRouter([
         <BackToTop />
         <WhattsappButton />
         <RightNavbar />
+        <ProductAddRemove />
       </div>
     ),
   },
@@ -58,6 +61,7 @@ let router = createBrowserRouter([
         <BackToTop />
         <WhattsappButton />
         <RightNavbar />
+        <ProductAddRemove />
       </div>
     ),
   },
@@ -73,6 +77,7 @@ let router = createBrowserRouter([
         <BackToTop />
         <WhattsappButton />
         <RightNavbar />
+        <ProductAddRemove />
       </div>
     ),
   },
@@ -88,6 +93,7 @@ let router = createBrowserRouter([
         <BackToTop />
         <WhattsappButton />
         <RightNavbar />
+        <ProductAddRemove />
       </div>
     ),
   },

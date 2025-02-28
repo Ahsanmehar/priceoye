@@ -5,29 +5,35 @@ function ProductAddRemove() {
   let addtowishlistdata = useSelector(
     (state) => state.wishlist.addtowishlistdata
   );
+
   let [showPop, setShowPop] = useState(false);
   let [status, setStatus] = useState("");
   let isFirstRender = useRef(true);
+  let prevLength = useRef(addtowishlistdata.length);
 
   useEffect(() => {
     if (isFirstRender.current) {
       isFirstRender.current = false;
+      prevLength.current = addtowishlistdata.length;
       return;
     }
 
-    if (addtowishlistdata.length > 0) {
-      setShowPop(true);
+    if (addtowishlistdata.length > prevLength.current) {
       setStatus("added");
     } else {
-      setShowPop(true);
       setStatus("removed");
     }
+
+    prevLength.current = addtowishlistdata.length; 
+
+    setShowPop(true);
     let timer = setTimeout(() => {
       setShowPop(false);
     }, 3000);
 
     return () => clearTimeout(timer);
   }, [addtowishlistdata]);
+
   return (
     <>
       {showPop && (
