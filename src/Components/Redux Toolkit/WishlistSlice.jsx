@@ -2,7 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 import { selectTotalCount } from "./ProductSlice";
 
 const initialState = {
-  addtowishlistdata: JSON.parse(localStorage.getItem("addtowishlist")) || [],
+  addtowishlistdata: (() => {
+    try {
+      return JSON.parse(localStorage.getItem("addtowishlist")) || [];
+    } catch (error) {
+      console.error("Error parsing wishlist data:", error);
+      return [];
+    }
+  })(),
 };
 
 const WishlistSlice = createSlice({

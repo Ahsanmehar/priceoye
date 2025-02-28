@@ -133,7 +133,7 @@ function TabletIpadCard() {
                   >
                     <i
                       className={`ri-heart-line heart hearthover ${
-                        addtowishlistdata.some((item) => item.id == data.id)
+                        addtowishlistdata.some((item) => item?.id == data?.id)
                           ? "bi bi-heart-fill text-red-100"
                           : "ri-heart-line"
                       }`}

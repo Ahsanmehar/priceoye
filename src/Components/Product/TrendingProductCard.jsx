@@ -31,6 +31,7 @@ function TrendingProduct() {
     <div className="overflow-x-auto scrollbar-hide">
       <div className="bg-mygra1 w-max h-[fit] flex gap-[50px]">
         {trending.map((data, index) => {
+          
           return (
             <div
               key={index}
@@ -52,7 +53,7 @@ function TrendingProduct() {
                   >
                     <i
                       className={`ri-heart-line heart hearthover ${
-                        addtowishlistdata.some((item) => item.id == data.id)
+                        addtowishlistdata.some((item) => item?.id == data?.id)
                           ? "bi bi-heart-fill text-red-100"
                           : "ri-heart-line"
                       }`}

@@ -42,7 +42,7 @@ function SmartPhoneCard() {
 
   function addwishlist(data) {
     const index = addtowishlistdata.findIndex((item) => item.id === data.id);
-
+    if (!data || !data.id) return; // Ensure data is valid
     if (index !== -1) {
       dispatch(removewishlist(index));
     } else {
@@ -135,11 +135,19 @@ function SmartPhoneCard() {
                   >
                     <i
                       className={`ri-heart-line heart hearthover ${
-                        addtowishlistdata.some((item) => item.id == data.id)
-                          ? "bi bi-heart-fill text-red-100"
+                        addtowishlistdata.some((item) => item?.id == data?.id)
+                          ? "bi bi-heart-fill"
                           : "ri-heart-line"
                       }`}
+                      style={{
+                        color: addtowishlistdata.some(
+                          (item) => item?.id == data?.id
+                        )
+                          ? "red"
+                          : "",
+                      }}
                     ></i>
+
                     <span className="hearttooltip">Add to Wishlist</span>
                   </div>
 
